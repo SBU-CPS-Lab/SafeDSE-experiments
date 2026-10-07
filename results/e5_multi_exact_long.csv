@@ -1,0 +1,2 @@
+factor,baseline,old_status,old_total_cost,status,seconds,total_cost,mu_max,mu_list,nprocs,hw_cost,dev_cost,promotion_cost,partition_total,pattern_cost,power,patterns,verify_ok,mu_solver,pin_status,pin_seconds,pin_ok,agree
+1.10,joint,UNSAT,,UNSAT,994.733,,,,,,,,,,,,,,,,,True

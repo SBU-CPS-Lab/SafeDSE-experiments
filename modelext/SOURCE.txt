@@ -1,0 +1,3 @@
+SafeDSE commit 018cf63, model/ and lib/, with the model extensions
+E1-E3 of modelext_build.py (lib/modelext.mzn and 8 edits).
+Evaluation copy; never part of SafeDSE.

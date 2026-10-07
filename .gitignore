@@ -1,0 +1,7 @@
+__pycache__/
+results/tmp/
+results/logs/
+synthetic/tmp/
+desyde/build/
+desyde/deps/
+desyde/logs/

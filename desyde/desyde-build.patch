@@ -1,0 +1,90 @@
+diff --git a/src/Makefile b/src/Makefile
+index f52f969..b4b10fa 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -87,7 +87,7 @@ CXXFLAGS += -Wall -Wno-maybe-uninitialized -Wno-unused-result -std=c++11 -g -O1
+ LDFLAGS  += 
+ LDLIBS   += -L/usr/local/lib/ -lgecodeint -lgecodeset -lgecodesearch -lgecodekernel \
+             -lgecodesupport -lgecodeminimodel -lgecodegist -lgecodefloat \
+-            -lxml2 -lboost_system \
++            -lxml2 \
+             -lboost_filesystem -lboost_program_options 
+ 
+ 
+diff --git a/src/settings/input_reader.cpp b/src/settings/input_reader.cpp
+index a2a8865..a0a1e05 100644
+--- a/src/settings/input_reader.cpp
++++ b/src/settings/input_reader.cpp
+@@ -144,7 +144,7 @@ void InputReader::parsConstXMLNode(vector<char*> elements, vector<char*> values,
+ char* InputReader::getValueOfElement(xmlNodePtr node, char* inElement)
+ {
+   if (!node) 
+-    return '\0';
++    return (char*)'\0';
+   /// go to the begining of the node
+   while( node->prev )
+     node = node->prev;
+@@ -159,7 +159,7 @@ char* InputReader::getValueOfElement(xmlNodePtr node, char* inElement)
+             }                               
+         }
+     }
+-  return '\0';
++  return (char*)'\0';
+ }
+         
+         
+@@ -173,7 +173,7 @@ char* InputReader::getValueOfElement(vector<char*> elements, vector<char*> value
+         }
+     }
+                 
+-  return '\0';
++  return (char*)'\0';
+ }
+         
+ vector<PeriodicTask*> InputReader::ReadTaskset(const string fileName)
+diff --git a/src/system/mapping.cpp b/src/system/mapping.cpp
+index a447891..ac4884c 100644
+--- a/src/system/mapping.cpp
++++ b/src/system/mapping.cpp
+@@ -96,6 +96,7 @@ Mapping::Mapping(Applications* p_program, Platform* p_target, XMLdoc& p_xml_wcet
+   
+   ///Load WCETs
+   load_wcets(p_xml_wcet);
++  sysConstr = SystemConstraints{0, 0, 0, 0, 0};
+   if(isDesignConstraints(p_xml2)){
+     load_designConstraints(p_xml2);
+   }else if(isMappingRules(p_xml2)){
+@@ -344,7 +345,7 @@ void Mapping::setMappingRules(string taskType, int _mapOn, vector<int> _notMapOn
+         THROW_EXCEPTION(InvalidArgumentException,"proc id for doMap of "+ taskType +" out of bound\n");
+       }
+       mappingRules_do[i] = _mapOn;
+-      for(j: _notMapOn){
++      for(auto j: _notMapOn){
+         if (wcets[i].size() <= j) {
+           THROW_EXCEPTION(InvalidArgumentException,"proc id for doNotMap of "+ taskType +" out of bound\n");
+         }
+diff --git a/src/tools/stringtools.hpp b/src/tools/stringtools.hpp
+index 9d1644b..a8d26ae 100644
+--- a/src/tools/stringtools.hpp
++++ b/src/tools/stringtools.hpp
+@@ -41,6 +41,7 @@
+ #include <cstdlib>
+ #include <list>
+ #include <boost/algorithm/string/join.hpp>
++#include <vector>
+ using namespace std;
+ 
+ namespace tools {
+diff --git a/src/tools/systools.hpp b/src/tools/systools.hpp
+index c516261..0d79806 100644
+--- a/src/tools/systools.hpp
++++ b/src/tools/systools.hpp
+@@ -36,7 +36,7 @@
+ #include <list>
+ #include <vector>
+ #include "../exceptions/ioexception.h"
+-
++#include <boost/filesystem.hpp> 
+ 
+ using namespace DeSyDe;
+ 

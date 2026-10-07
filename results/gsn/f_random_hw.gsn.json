@@ -1,0 +1,1436 @@
+{
+ "format": "GSN/1",
+ "meta": {
+  "label": "f_random_hw",
+  "dzn": "safedse/out/f_random_hw.dzn",
+  "solution": "results/gsn/f_random_hw.sol.json",
+  "fault_model": "random_hw",
+  "fault_model_how": "inferred from pat_allowed",
+  "verifier_ok": true
+ },
+ "stats": {
+  "elements": 117,
+  "goals": 41,
+  "goals_undeveloped": 15,
+  "solutions": 16,
+  "assumptions": 4
+ },
+ "warnings": [],
+ "outOfScope": [],
+ "elements": [
+  {
+   "id": "C1",
+   "kind": "Context",
+   "text": "IEC 61508 is the governing functional safety standard; integrity is allocated as a required Safety Integrity Level per actor. SIL 0 means no safety requirement.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C2",
+   "kind": "Context",
+   "text": "The required SIL of every actor is an input from a hazard and risk analysis outside this argument.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C3",
+   "kind": "Context",
+   "text": "Pattern catalog patterns.yaml: structure, placement relations, SIL range and covered fault classes of each pattern, after Armoush, Koopman. Every pattern choice and placement rule in this argument rests on it.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C4",
+   "kind": "Context",
+   "text": "Platform: 22 core slots across 7 fault containment regions, core types cortexM, cortexR. Cores actually instantiated in this solution: [1, 3, 7, 8, 9].",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C5",
+   "kind": "Context",
+   "text": "Applications: c_rasta, modelled as synchronous dataflow graphs and unfolded to an equivalent homogeneous graph before mapping.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C6",
+   "kind": "Context",
+   "text": "Fault model under consideration: random hardware faults. Patterns not covering this fault class were excluded from the design space, and placement relations motivated only by an excluded fault class were not posted. Not addressed: transient faults, timing and omission faults, faults of the interconnect, latent faults, diagnostic coverage, and degraded modes.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "J1",
+   "kind": "Justification",
+   "text": "This argument is generated from a design space exploration result. It argues only over properties of the ARCHITECTURE and its DEPLOYMENT: which pattern is applied to which actor, where components are placed relative to each other, how integrity levels are provisioned per core, and whether the resulting schedule meets its timing requirement. Claims about implementation correctness, detection coverage and development process are outside what a mapping can establish and are carried below as undeveloped goals. The SIL range of a pattern is a precondition taken from the catalog, necessary but not sufficient for a SIL: this argument computes no failure rates, hardware fault tolerance, safe failure fraction or diagnostic coverage.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "A1",
+   "kind": "Assumption",
+   "text": "The worst-case execution times supplied to the exploration are sound upper bounds for every actor on every core type it may be bound to. The exploration consumes these figures; it does not establish them.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "A2",
+   "kind": "Assumption",
+   "text": "Token preservation: every replica fires on every iteration and produces on all of its outputs, in the fault-free and in the degraded case alike. Detection marks a token invalid; it never withholds one. The timing argument therefore holds in the degraded mode, at the cost of being conservative when no fault is present.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "A3",
+   "kind": "Assumption",
+   "text": "The verifier re-checks the solution against the instance produced by the front end, not against the original specification. The instance represents the platform, execution times, pattern catalog and safety requirements correctly; an error in the front end or in the specification would be common to the exploration and the verifier.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G1",
+   "kind": "Goal",
+   "text": "The deployed architecture of f_random_hw meets, for every safety-related actor, the architectural preconditions that the pattern catalog states for the actor's required SIL.",
+   "undeveloped": false,
+   "supportedBy": [
+    "S1"
+   ],
+   "inContextOf": [
+    "C1",
+    "C2",
+    "C3",
+    "C5",
+    "C4",
+    "C6",
+    "J1",
+    "A1",
+    "A2",
+    "A3",
+    "C7"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C7",
+   "kind": "Context",
+   "text": "Evidence identity (SHA-256): instance bffd119e84d5e80da4cbbd965c8df9fad5a1f09ca6f26c77cd67613e707074a3; solution ada655151f7f8c7cb828495372a93370b8770f4ded11d80e82b455066a890fcb; check log f4f587bb0fd5a339ce76c38cb056739c9ba9b5df7d26d4363139d18627512cb1. Every Solution cites a record of this check log by index.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S1",
+   "kind": "Strategy",
+   "text": "Argument over each safety-related actor in turn, followed by the platform-wide properties on which those per-actor arguments depend.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G2",
+    "G10",
+    "G13",
+    "G16",
+    "G19",
+    "G27",
+    "G30",
+    "G38",
+    "G39",
+    "G40",
+    "G41"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G2",
+   "kind": "Goal",
+   "text": "Actor frontEnd of application c_rasta, required SIL 3: the deployment meets the architectural preconditions that the catalog states for SIL 3.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G3",
+    "S2"
+   ],
+   "inContextOf": [
+    "C8",
+    "C9"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C8",
+   "kind": "Context",
+   "text": "frontEnd is unfolded into 1 concurrent copy, bound to core 1, implemented at SIL 3.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G3",
+   "kind": "Goal",
+   "text": "Every copy of frontEnd and of its checker is implemented at SIL 3 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn1",
+    "Sn2"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn1",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of frontEnd is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    6
+   ],
+   "note": ""
+  },
+  {
+   "id": "Sn2",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of frontEnd's checker is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    13
+   ],
+   "note": ""
+  },
+  {
+   "id": "C9",
+   "kind": "Context",
+   "text": "Components introduced by high_sil_isolated_checker for frontEnd: checker on core 3 at SIL 3.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S2",
+   "kind": "Strategy",
+   "text": "Argument by application of the high_sil_isolated_checker safety architecture pattern, over each of its general scenarios.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G4",
+    "G6"
+   ],
+   "inContextOf": [
+    "C10"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C10",
+   "kind": "Context",
+   "text": "Pattern high_sil_isolated_checker [koopman, High SIL Doer/Checker with isolated checker]: A high-SIL doer with an equally high-SIL checker on a separate processor. Distinct from the SIL 1-2 Doer/Checker family in that both sides are developed to the high level, and from 2-of-2 in that the checker verifies rather than recomputes -- so its WCET is a fraction of the doer's, which is what makes it competitive on throughput. Koopman's \"Attempted High SIL Doer/Checker\" is the same structure WITHOUT the isolation, and is an anti-pattern; the catalogue check rejects any record that claims to fail silent while co-locating its channels. Attainable SIL [3]; covers random_hw; fails silent; voter folded.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G4",
+   "kind": "Goal",
+   "text": "An implausible output of the doer is detected by the equally-high-SIL checker. [high_sil_isolated_checker/SC1]",
+   "undeveloped": false,
+   "supportedBy": [
+    "S3"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S3",
+   "kind": "Strategy",
+   "text": "Achieved through the Sanity Check tactic (Checking): Detection of implausible system outputs or states.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G5"
+   ],
+   "inContextOf": [
+    "C11"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C11",
+   "kind": "Context",
+   "text": "Sanity Check: Checks whether a system state or value remains within a valid range which can be defined in the system specification or which is based on knowledge about the internal structure or nature of the system.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C12",
+   "kind": "Context",
+   "text": "Candidate methods from the standard: IEC 61508-7 A.1.2 monitoring relay contacts; IEC 61508-7 A.2.7 analog signal monitoring; IEC 61508-7 A.3.1-A.3.3 self-tests; IEC 61508-7 A.4.1-A.4.4 checksums; IEC 61508-7 A.5.1-A.5.5 RAM tests; IEC 61508-7 A.6.1 test pattern; IEC 61508-7 A.9 temporal and logical program monitoring; IEC 61508-7 C.3.3 assertion programming; IEC 61508-7 C.5.3 interface checking",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G5",
+   "kind": "Goal",
+   "text": "An IEC 61508 method realising Sanity Check is implemented in frontEnd, and its effectiveness for the faults of concern is demonstrated.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C12"
+   ],
+   "evidence": [],
+   "note": "value-domain / implementation evidence; the mapping cannot establish this"
+  },
+  {
+   "id": "G6",
+   "kind": "Goal",
+   "text": "A random hardware fault in the doer's fault containment region does not disable the checker. [high_sil_isolated_checker/SC2]",
+   "undeveloped": false,
+   "supportedBy": [
+    "S4"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S4",
+   "kind": "Strategy",
+   "text": "Achieved through the Replication Redundancy tactic (Redundancy): Introduction of a redundant system which allows detection or masking of random hardware failures (not systematic failures).",
+   "undeveloped": false,
+   "supportedBy": [
+    "G7",
+    "G8",
+    "G9"
+   ],
+   "inContextOf": [
+    "C13"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C13",
+   "kind": "Context",
+   "text": "Replication Redundancy: Introduction of a redundant system of the same implementation. The redundant systems maintain the same functionality, use identical hardware, and run the same software implementation.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G7",
+   "kind": "Goal",
+   "text": "In the deployed mapping, the replicated components run in different fault containment regions.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn3"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn3",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: DIFFERENT_FCR between frontEnd and frontEnd/checker: cores 1/3, fault containment regions 1/2, core types cortexR/cortexR.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    38
+   ],
+   "note": ""
+  },
+  {
+   "id": "G8",
+   "kind": "Goal",
+   "text": "Common-cause failures of these components through what the placement does not separate (the interconnect and cross-check link, the shared inputs, and the point where the results are compared or voted) are identified and controlled.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "common-cause analysis; the placement does not establish it"
+  },
+  {
+   "id": "C14",
+   "kind": "Context",
+   "text": "Candidate methods from the standard: IEC 61508-7 A.2.1 tests by redundant hardware; IEC 61508-7 A.2.5 monitored redundancy; IEC 61508-7 A.3.5 reciprocal comparison by software; IEC 61508-7 A.4.5 block replication; IEC 61508-7 A.6.3 multi-channel output; IEC 61508-7 A.7.3 complete hardware redundancy; IEC 61508-7 A.7.5 transmission redundancy",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G9",
+   "kind": "Goal",
+   "text": "An IEC 61508 method realising Replication Redundancy is implemented in frontEnd, and its effectiveness for the faults of concern is demonstrated.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C14"
+   ],
+   "evidence": [],
+   "note": "value-domain / implementation evidence; the mapping cannot establish this"
+  },
+  {
+   "id": "G10",
+   "kind": "Goal",
+   "text": "Actor rasta of application c_rasta, required SIL 1: the deployment meets the architectural preconditions that the catalog states for SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G11",
+    "S5"
+   ],
+   "inContextOf": [
+    "C15"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C15",
+   "kind": "Context",
+   "text": "rasta is unfolded into 1 concurrent copy, bound to core 7, implemented at SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G11",
+   "kind": "Goal",
+   "text": "Every copy of rasta is implemented at SIL 1 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn4"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn4",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of rasta is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    7
+   ],
+   "note": ""
+  },
+  {
+   "id": "S5",
+   "kind": "Strategy",
+   "text": "Argument by development process alone: no structural safety pattern is applied.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G12"
+   ],
+   "inContextOf": [
+    "C16"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C16",
+   "kind": "Context",
+   "text": "IEC 61508 expects diagnostic coverage from SIL 2 upward, so process alone is admissible only to SIL 1. The exploration enforced this ceiling when choosing the pattern.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G12",
+   "kind": "Goal",
+   "text": "rasta is developed and verified to SIL 1 in accordance with IEC 61508-3.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "process evidence; outside the DSE"
+  },
+  {
+   "id": "G13",
+   "kind": "Goal",
+   "text": "Actor powspec of application c_rasta, required SIL 1: the deployment meets the architectural preconditions that the catalog states for SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G14",
+    "S6"
+   ],
+   "inContextOf": [
+    "C17"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C17",
+   "kind": "Context",
+   "text": "powspec is unfolded into 1 concurrent copy, bound to core 7, implemented at SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G14",
+   "kind": "Goal",
+   "text": "Every copy of powspec is implemented at SIL 1 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn5"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn5",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of powspec is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    8
+   ],
+   "note": ""
+  },
+  {
+   "id": "S6",
+   "kind": "Strategy",
+   "text": "Argument by development process alone: no structural safety pattern is applied.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G15"
+   ],
+   "inContextOf": [
+    "C18"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C18",
+   "kind": "Context",
+   "text": "IEC 61508 expects diagnostic coverage from SIL 2 upward, so process alone is admissible only to SIL 1. The exploration enforced this ceiling when choosing the pattern.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G15",
+   "kind": "Goal",
+   "text": "powspec is developed and verified to SIL 1 in accordance with IEC 61508-3.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "process evidence; outside the DSE"
+  },
+  {
+   "id": "G16",
+   "kind": "Goal",
+   "text": "Actor audspec of application c_rasta, required SIL 1: the deployment meets the architectural preconditions that the catalog states for SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G17",
+    "S7"
+   ],
+   "inContextOf": [
+    "C19"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C19",
+   "kind": "Context",
+   "text": "audspec is unfolded into 1 concurrent copy, bound to core 7, implemented at SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G17",
+   "kind": "Goal",
+   "text": "Every copy of audspec is implemented at SIL 1 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn6"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn6",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of audspec is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    9
+   ],
+   "note": ""
+  },
+  {
+   "id": "S7",
+   "kind": "Strategy",
+   "text": "Argument by development process alone: no structural safety pattern is applied.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G18"
+   ],
+   "inContextOf": [
+    "C20"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C20",
+   "kind": "Context",
+   "text": "IEC 61508 expects diagnostic coverage from SIL 2 upward, so process alone is admissible only to SIL 1. The exploration enforced this ceiling when choosing the pattern.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G18",
+   "kind": "Goal",
+   "text": "audspec is developed and verified to SIL 1 in accordance with IEC 61508-3.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "process evidence; outside the DSE"
+  },
+  {
+   "id": "G19",
+   "kind": "Goal",
+   "text": "Actor compJah of application c_rasta, required SIL 3: the deployment meets the architectural preconditions that the catalog states for SIL 3.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G20",
+    "S8"
+   ],
+   "inContextOf": [
+    "C21",
+    "C22"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C21",
+   "kind": "Context",
+   "text": "compJah is unfolded into 1 concurrent copy, bound to core 1, implemented at SIL 3.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G20",
+   "kind": "Goal",
+   "text": "Every copy of compJah and of its checker is implemented at SIL 3 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn7",
+    "Sn8"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn7",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of compJah is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    10
+   ],
+   "note": ""
+  },
+  {
+   "id": "Sn8",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of compJah's checker is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    14
+   ],
+   "note": ""
+  },
+  {
+   "id": "C22",
+   "kind": "Context",
+   "text": "Components introduced by high_sil_isolated_checker for compJah: checker on core 3 at SIL 3.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S8",
+   "kind": "Strategy",
+   "text": "Argument by application of the high_sil_isolated_checker safety architecture pattern, over each of its general scenarios.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G21",
+    "G23"
+   ],
+   "inContextOf": [
+    "C23"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C23",
+   "kind": "Context",
+   "text": "Pattern high_sil_isolated_checker [koopman, High SIL Doer/Checker with isolated checker]: A high-SIL doer with an equally high-SIL checker on a separate processor. Distinct from the SIL 1-2 Doer/Checker family in that both sides are developed to the high level, and from 2-of-2 in that the checker verifies rather than recomputes -- so its WCET is a fraction of the doer's, which is what makes it competitive on throughput. Koopman's \"Attempted High SIL Doer/Checker\" is the same structure WITHOUT the isolation, and is an anti-pattern; the catalogue check rejects any record that claims to fail silent while co-locating its channels. Attainable SIL [3]; covers random_hw; fails silent; voter folded.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G21",
+   "kind": "Goal",
+   "text": "An implausible output of the doer is detected by the equally-high-SIL checker. [high_sil_isolated_checker/SC1]",
+   "undeveloped": false,
+   "supportedBy": [
+    "S9"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S9",
+   "kind": "Strategy",
+   "text": "Achieved through the Sanity Check tactic (Checking): Detection of implausible system outputs or states.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G22"
+   ],
+   "inContextOf": [
+    "C24"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C24",
+   "kind": "Context",
+   "text": "Sanity Check: Checks whether a system state or value remains within a valid range which can be defined in the system specification or which is based on knowledge about the internal structure or nature of the system.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C25",
+   "kind": "Context",
+   "text": "Candidate methods from the standard: IEC 61508-7 A.1.2 monitoring relay contacts; IEC 61508-7 A.2.7 analog signal monitoring; IEC 61508-7 A.3.1-A.3.3 self-tests; IEC 61508-7 A.4.1-A.4.4 checksums; IEC 61508-7 A.5.1-A.5.5 RAM tests; IEC 61508-7 A.6.1 test pattern; IEC 61508-7 A.9 temporal and logical program monitoring; IEC 61508-7 C.3.3 assertion programming; IEC 61508-7 C.5.3 interface checking",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G22",
+   "kind": "Goal",
+   "text": "An IEC 61508 method realising Sanity Check is implemented in compJah, and its effectiveness for the faults of concern is demonstrated.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C25"
+   ],
+   "evidence": [],
+   "note": "value-domain / implementation evidence; the mapping cannot establish this"
+  },
+  {
+   "id": "G23",
+   "kind": "Goal",
+   "text": "A random hardware fault in the doer's fault containment region does not disable the checker. [high_sil_isolated_checker/SC2]",
+   "undeveloped": false,
+   "supportedBy": [
+    "S10"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S10",
+   "kind": "Strategy",
+   "text": "Achieved through the Replication Redundancy tactic (Redundancy): Introduction of a redundant system which allows detection or masking of random hardware failures (not systematic failures).",
+   "undeveloped": false,
+   "supportedBy": [
+    "G24",
+    "G25",
+    "G26"
+   ],
+   "inContextOf": [
+    "C26"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C26",
+   "kind": "Context",
+   "text": "Replication Redundancy: Introduction of a redundant system of the same implementation. The redundant systems maintain the same functionality, use identical hardware, and run the same software implementation.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G24",
+   "kind": "Goal",
+   "text": "In the deployed mapping, the replicated components run in different fault containment regions.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn9"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn9",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: DIFFERENT_FCR between compJah and compJah/checker: cores 1/3, fault containment regions 1/2, core types cortexR/cortexR.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    39
+   ],
+   "note": ""
+  },
+  {
+   "id": "G25",
+   "kind": "Goal",
+   "text": "Common-cause failures of these components through what the placement does not separate (the interconnect and cross-check link, the shared inputs, and the point where the results are compared or voted) are identified and controlled.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "common-cause analysis; the placement does not establish it"
+  },
+  {
+   "id": "C27",
+   "kind": "Context",
+   "text": "Candidate methods from the standard: IEC 61508-7 A.2.1 tests by redundant hardware; IEC 61508-7 A.2.5 monitored redundancy; IEC 61508-7 A.3.5 reciprocal comparison by software; IEC 61508-7 A.4.5 block replication; IEC 61508-7 A.6.3 multi-channel output; IEC 61508-7 A.7.3 complete hardware redundancy; IEC 61508-7 A.7.5 transmission redundancy",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G26",
+   "kind": "Goal",
+   "text": "An IEC 61508 method realising Replication Redundancy is implemented in compJah, and its effectiveness for the faults of concern is demonstrated.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C27"
+   ],
+   "evidence": [],
+   "note": "value-domain / implementation evidence; the mapping cannot establish this"
+  },
+  {
+   "id": "G27",
+   "kind": "Goal",
+   "text": "Actor rastaFilter of application c_rasta, required SIL 1: the deployment meets the architectural preconditions that the catalog states for SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G28",
+    "S11"
+   ],
+   "inContextOf": [
+    "C28"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C28",
+   "kind": "Context",
+   "text": "rastaFilter is unfolded into 1 concurrent copy, bound to core 7, implemented at SIL 1.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G28",
+   "kind": "Goal",
+   "text": "Every copy of rastaFilter is implemented at SIL 1 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn10"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn10",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of rastaFilter is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    11
+   ],
+   "note": ""
+  },
+  {
+   "id": "S11",
+   "kind": "Strategy",
+   "text": "Argument by development process alone: no structural safety pattern is applied.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G29"
+   ],
+   "inContextOf": [
+    "C29"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C29",
+   "kind": "Context",
+   "text": "IEC 61508 expects diagnostic coverage from SIL 2 upward, so process alone is admissible only to SIL 1. The exploration enforced this ceiling when choosing the pattern.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G29",
+   "kind": "Goal",
+   "text": "rastaFilter is developed and verified to SIL 1 in accordance with IEC 61508-3.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "process evidence; outside the DSE"
+  },
+  {
+   "id": "G30",
+   "kind": "Goal",
+   "text": "Actor backEnd of application c_rasta, required SIL 2: the deployment meets the architectural preconditions that the catalog states for SIL 2.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G31",
+    "S12"
+   ],
+   "inContextOf": [
+    "C30",
+    "C31"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C30",
+   "kind": "Context",
+   "text": "backEnd is unfolded into 1 concurrent copy, bound to core 8, implemented at SIL 2.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G31",
+   "kind": "Goal",
+   "text": "Every copy of backEnd and of its checker is implemented at SIL 2 or above and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn11",
+    "Sn12"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn11",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of backEnd is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    12
+   ],
+   "note": ""
+  },
+  {
+   "id": "Sn12",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: every active copy of backEnd's checker is implemented at or above its required SIL and runs on a core provisioned to at least that level.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    15
+   ],
+   "note": ""
+  },
+  {
+   "id": "C31",
+   "kind": "Context",
+   "text": "Components introduced by low_sil_doer_checker for backEnd: checker on core 9 at SIL 2.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S12",
+   "kind": "Strategy",
+   "text": "Argument by application of the low_sil_doer_checker safety architecture pattern, over each of its general scenarios.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G32",
+    "G34"
+   ],
+   "inContextOf": [
+    "C32"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C32",
+   "kind": "Context",
+   "text": "Pattern low_sil_doer_checker [koopman, Low SIL Doer/Checker Pair (E-quizzer)]: A low-SIL doer on one CPU, checked by a higher-SIL checker on a SEPARATE CPU. The checker quizzes the doer and can shut the channel down, so the pair fails active at SIL 1-2. Separation is what makes it tolerate a random hardware fault in the doer's processor. Attainable SIL [1, 2]; covers random_hw; fails active; voter folded.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G32",
+   "kind": "Goal",
+   "text": "An implausible output of the doer is detected by the checker. [low_sil_doer_checker/SC1]",
+   "undeveloped": false,
+   "supportedBy": [
+    "S13"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S13",
+   "kind": "Strategy",
+   "text": "Achieved through the Sanity Check tactic (Checking): Detection of implausible system outputs or states.",
+   "undeveloped": false,
+   "supportedBy": [
+    "G33"
+   ],
+   "inContextOf": [
+    "C33"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C33",
+   "kind": "Context",
+   "text": "Sanity Check: Checks whether a system state or value remains within a valid range which can be defined in the system specification or which is based on knowledge about the internal structure or nature of the system.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C34",
+   "kind": "Context",
+   "text": "Candidate methods from the standard: IEC 61508-7 A.1.2 monitoring relay contacts; IEC 61508-7 A.2.7 analog signal monitoring; IEC 61508-7 A.3.1-A.3.3 self-tests; IEC 61508-7 A.4.1-A.4.4 checksums; IEC 61508-7 A.5.1-A.5.5 RAM tests; IEC 61508-7 A.6.1 test pattern; IEC 61508-7 A.9 temporal and logical program monitoring; IEC 61508-7 C.3.3 assertion programming; IEC 61508-7 C.5.3 interface checking",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G33",
+   "kind": "Goal",
+   "text": "An IEC 61508 method realising Sanity Check is implemented in backEnd, and its effectiveness for the faults of concern is demonstrated.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C34"
+   ],
+   "evidence": [],
+   "note": "value-domain / implementation evidence; the mapping cannot establish this"
+  },
+  {
+   "id": "G34",
+   "kind": "Goal",
+   "text": "A random hardware fault in the doer's processor does not prevent detection, because the checker runs on another processor. [low_sil_doer_checker/SC2]",
+   "undeveloped": false,
+   "supportedBy": [
+    "S14"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S14",
+   "kind": "Strategy",
+   "text": "Achieved through the Replication Redundancy tactic (Redundancy): Introduction of a redundant system which allows detection or masking of random hardware failures (not systematic failures).",
+   "undeveloped": false,
+   "supportedBy": [
+    "G35",
+    "G36",
+    "G37"
+   ],
+   "inContextOf": [
+    "C35"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C35",
+   "kind": "Context",
+   "text": "Replication Redundancy: Introduction of a redundant system of the same implementation. The redundant systems maintain the same functionality, use identical hardware, and run the same software implementation.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G35",
+   "kind": "Goal",
+   "text": "In the deployed mapping, the replicated components run on different cores, possibly in one fault containment region.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn13"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn13",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: DIFFERENT between backEnd and backEnd/checker: cores 8/9, fault containment regions 4/4, core types cortexM/cortexM.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    40
+   ],
+   "note": ""
+  },
+  {
+   "id": "G36",
+   "kind": "Goal",
+   "text": "Common-cause failures of these components through what the placement does not separate (the fault containment region that may hold both cores, with its power and clock, the interconnect and cross-check link, the shared inputs, and the point where the results are compared or voted) are identified and controlled.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": "common-cause analysis; the placement does not establish it"
+  },
+  {
+   "id": "C36",
+   "kind": "Context",
+   "text": "Candidate methods from the standard: IEC 61508-7 A.2.1 tests by redundant hardware; IEC 61508-7 A.2.5 monitored redundancy; IEC 61508-7 A.3.5 reciprocal comparison by software; IEC 61508-7 A.4.5 block replication; IEC 61508-7 A.6.3 multi-channel output; IEC 61508-7 A.7.3 complete hardware redundancy; IEC 61508-7 A.7.5 transmission redundancy",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G37",
+   "kind": "Goal",
+   "text": "An IEC 61508 method realising Replication Redundancy is implemented in backEnd, and its effectiveness for the faults of concern is demonstrated.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C36"
+   ],
+   "evidence": [],
+   "note": "value-domain / implementation evidence; the mapping cannot establish this"
+  },
+  {
+   "id": "G38",
+   "kind": "Goal",
+   "text": "No core hosts software of differing integrity without certified partitioning, and every core is provisioned to at least the highest integrity level it hosts.",
+   "undeveloped": false,
+   "supportedBy": [
+    "S15"
+   ],
+   "inContextOf": [
+    "C37",
+    "A4"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C37",
+   "kind": "Context",
+   "text": "Koopman's rule 2: absent certified partitioning, all software on a processor must be developed to the highest integrity level present on it. Whether a core type can provide such partitioning is declared per core type by the platform.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "A4",
+   "kind": "Assumption",
+   "text": "Software on different cores does not interfere except through the interconnect; shared memory, caches and input/output are not modelled, so applying the rule per core assumes freedom from interference between cores. Certified partitioning, where used, separates software of different SIL on one core in space and time.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "S15",
+   "kind": "Strategy",
+   "text": "Achieved through the Barrier tactic (Isolation): protect a subsystem from influences of other subsystems.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn14"
+   ],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn14",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: all 22 core slots re-examined against their type ceiling and against the set of integrity levels actually hosted.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ],
+   "note": ""
+  },
+  {
+   "id": "G39",
+   "kind": "Goal",
+   "text": "The deployed mapping and static order meet the declared timing requirements, in the fault-free and in the degraded case alike.",
+   "undeveloped": false,
+   "supportedBy": [
+    "Sn15",
+    "Sn16"
+   ],
+   "inContextOf": [
+    "C38",
+    "A1",
+    "A2"
+   ],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "C38",
+   "kind": "Context",
+   "text": "Iteration period per application: [1079]. Timing is a safety property here because a replica that misses its deadline cannot perform the check the pattern credits it with.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "Sn15",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: the mapping- and scheduling-aware graph was rebuilt from the returned assignment and its period computed twice by disjoint methods -- Lawler's parametric maximum-cycle-ratio search and max-plus self-timed simulation -- which agree with each other, and the period the solver reported is the least integer at or above that ratio.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    5
+   ],
+   "note": ""
+  },
+  {
+   "id": "Sn16",
+   "kind": "Solution",
+   "text": "Independent re-check of the solution: the reported period is at least the total execution demand of the busiest core, the bound that a static order left open as a chain silently loses.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [
+    41
+   ],
+   "note": ""
+  },
+  {
+   "id": "G40",
+   "kind": "Goal",
+   "text": "Every detected fault brings the function to its safe state within the process safety time.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C39",
+    "A2"
+   ],
+   "evidence": [],
+   "note": "fault reaction and process safety time are not modelled"
+  },
+  {
+   "id": "C39",
+   "kind": "Context",
+   "text": "In the dataflow model, a component's verdict on iteration k reaches the owner over an edge with t initial tokens, i.e. in the owner's firing t iterations later (high_sil_isolated_checker: t = 1, low_sil_doer_checker: t = 1). The reaction itself and the process safety time are not modelled.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  },
+  {
+   "id": "G41",
+   "kind": "Goal",
+   "text": "Every software component is developed, verified and validated to its required safety integrity level in accordance with IEC 61508-3.",
+   "undeveloped": true,
+   "supportedBy": [],
+   "inContextOf": [
+    "C40"
+   ],
+   "evidence": [],
+   "note": "process evidence; the DSE prices this effort but cannot supply it"
+  },
+  {
+   "id": "C40",
+   "kind": "Context",
+   "text": "Integrity levels to be discharged by process, as active component counts: SIL 1: 4, SIL 2: 2, SIL 3: 4. Components implemented above their required level were promoted to satisfy Koopman's rule 2; the cost of that promotion is what the exploration minimised.",
+   "undeveloped": false,
+   "supportedBy": [],
+   "inContextOf": [],
+   "evidence": [],
+   "note": ""
+  }
+ ]
+}

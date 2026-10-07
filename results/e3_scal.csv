@@ -1,0 +1,61 @@
+sweep,param,index,tag,gen_status,actors_target,n_sdf_actors,n_hsdf_actual,n_core_types_actual,n,mu_status,mu_seconds,mu_star,mu_star_proven,status,seconds,total_cost,mu_max,nprocs,objective_bound,flat_vars,verify_ok,build_error,mu_solver,pin_status,pin_seconds,pin_ok
+actors,8,0,actorsweep_n8_i0,READY,8,7,7,3,24,OPTIMAL,1.656,43,True,OPTIMAL,1.758,4024,43,8,4024,6214,True,,43,OPTIMAL,0.482,True
+actors,8,1,actorsweep_n8_i1,READY,8,8,8,3,26,OPTIMAL,2.674,25,True,OPTIMAL,1.798,5453,25,6,5453,7090,True,,25,OPTIMAL,0.456,True
+actors,8,2,actorsweep_n8_i2,READY,8,7,7,3,24,OPTIMAL,2.68,20,True,OPTIMAL,2.447,3606,20,8,3606,6214,True,,20,OPTIMAL,0.47,True
+actors,8,3,actorsweep_n8_i3,READY,8,6,6,3,21,OPTIMAL,1.222,45,True,OPTIMAL,1.207,4782,45,5,4782,5103,True,,45,OPTIMAL,0.417,True
+actors,8,4,actorsweep_n8_i4,READY,8,7,7,3,24,OPTIMAL,2.891,49,True,OPTIMAL,3.057,4076,49,7,4076,6214,True,,49,OPTIMAL,0.454,True
+actors,16,0,actorsweep_n16_i0,READY,16,16,16,3,52,OPTIMAL,34.563,41,True,OPTIMAL,56.082,10154,41,8,10154,21391,True,,41,OPTIMAL,0.898,True
+actors,16,1,actorsweep_n16_i1,READY,16,15,15,3,50,OPTIMAL,16.185,79,True,OPTIMAL,16.318,9076,79,8,9076,20013,True,,79,OPTIMAL,0.88,True
+actors,16,2,actorsweep_n16_i2,READY,16,16,16,3,52,SAT,300.634,44,False,OPTIMAL,87.011,8560,44,8,8560,21390,True,,44,OPTIMAL,0.834,True
+actors,16,3,actorsweep_n16_i3,READY,16,16,16,3,52,OPTIMAL,137.272,43,True,OPTIMAL,232.916,9232,43,8,9232,21389,True,,43,OPTIMAL,0.847,True
+actors,16,4,actorsweep_n16_i4,READY,16,15,15,3,50,OPTIMAL,15.986,94,True,OPTIMAL,28.945,7387,94,8,7387,20014,True,,94,OPTIMAL,0.827,True
+actors,24,0,actorsweep_n24_i0,READY,24,21,21,3,68,SAT,300.794,116,False,SAT,600.776,10613,111,8,9319,33945,True,,116,OPTIMAL,1.281,True
+actors,24,1,actorsweep_n24_i1,READY,24,24,24,3,78,OPTIMAL,62.007,106,True,OPTIMAL,86.615,14491,106,8,14491,43196,True,,106,OPTIMAL,1.524,True
+actors,24,2,actorsweep_n24_i2,READY,24,22,22,3,73,SAT,300.912,67,False,UNKNOWN,600.837,,,,,,,,,,,
+actors,24,3,actorsweep_n24_i3,READY,24,24,24,3,78,OPTIMAL,260.622,94,True,UNKNOWN,600.95,,,,,,,,,,,
+actors,24,4,actorsweep_n24_i4,READY,24,24,24,3,78,SAT,300.88,135,False,OPTIMAL,83.127,14603,133,8,14603,43195,True,,135,OPTIMAL,1.434,True
+actors,32,0,actorsweep_n32_i0,READY,32,26,26,3,83,SAT,301.087,131,False,OPTIMAL,273.727,14424,128,8,14424,48194,True,,131,OPTIMAL,1.564,True
+actors,32,1,actorsweep_n32_i1,READY,32,32,32,3,104,SAT,301.675,181,False,SAT,601.715,20735,146,8,15691,72420,False,,181,OPTIMAL,2.475,True
+actors,32,2,actorsweep_n32_i2,READY,32,30,30,3,99,SAT,301.418,129,False,SAT,601.506,20649,109,8,13941,66210,False,,129,OPTIMAL,2.255,True
+actors,32,3,actorsweep_n32_i3,MU_UNKNOWN,32,31,31,3,,UNKNOWN,301.541,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,32,4,actorsweep_n32_i4,READY,32,29,29,3,94,SAT,301.344,100,False,UNKNOWN,601.321,,,,,,,,,,,
+actors,48,0,actorsweep_n48_i0,MU_UNKNOWN,48,47,47,3,,UNKNOWN,308.897,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,48,1,actorsweep_n48_i1,MU_UNKNOWN,48,47,47,3,,UNKNOWN,304.1,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,48,2,actorsweep_n48_i2,MU_UNKNOWN,48,46,46,3,,UNKNOWN,303.612,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,48,3,actorsweep_n48_i3,MU_UNKNOWN,48,44,44,3,,UNKNOWN,305.098,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,48,4,actorsweep_n48_i4,MU_UNKNOWN,48,47,47,3,,UNKNOWN,303.773,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,64,0,actorsweep_n64_i0,MU_UNKNOWN,64,63,63,3,,UNKNOWN,307.298,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,64,1,actorsweep_n64_i1,MU_UNKNOWN,64,63,63,3,,UNKNOWN,307.58,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,64,2,actorsweep_n64_i2,MU_UNKNOWN,64,64,64,3,,UNKNOWN,306.881,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,64,3,actorsweep_n64_i3,MU_UNKNOWN,64,64,64,3,,UNKNOWN,307.669,,,MU_UNKNOWN,,,,,,,,,,,,
+actors,64,4,actorsweep_n64_i4,MU_UNKNOWN,64,60,60,3,,UNKNOWN,306.38,,,MU_UNKNOWN,,,,,,,,,,,,
+catalogue,1,0,catsweep_k1_i0,BUILD_FAIL,24,18,18,3,,,,,,BUILD_FAIL,,,,,,,,"  pattern library: 1 records, all well formed (none)
+ERROR: actor 'a0' requires SIL 3 under fault model 'random_hw', but no pattern in the library both achieves it and is placeable on this platform. Reachable SILs under this fault model: [0, 1]. Either add a pattern, relax the requirement, or select a different fault model.
+",,,,
+catalogue,1,1,catsweep_k1_i1,BUILD_FAIL,24,23,23,3,,,,,,BUILD_FAIL,,,,,,,,"  pattern library: 1 records, all well formed (none)
+ERROR: actor 'a0' requires SIL 3 under fault model 'random_hw', but no pattern in the library both achieves it and is placeable on this platform. Reachable SILs under this fault model: [0, 1]. Either add a pattern, relax the requirement, or select a different fault model.
+",,,,
+catalogue,1,2,catsweep_k1_i2,BUILD_FAIL,24,22,22,3,,,,,,BUILD_FAIL,,,,,,,,"  pattern library: 1 records, all well formed (none)
+ERROR: actor 'a0' requires SIL 3 under fault model 'random_hw', but no pattern in the library both achieves it and is placeable on this platform. Reachable SILs under this fault model: [0, 1]. Either add a pattern, relax the requirement, or select a different fault model.
+",,,,
+catalogue,1,3,catsweep_k1_i3,BUILD_FAIL,24,18,18,3,,,,,,BUILD_FAIL,,,,,,,,"  pattern library: 1 records, all well formed (none)
+ERROR: actor 'a0' requires SIL 3 under fault model 'random_hw', but no pattern in the library both achieves it and is placeable on this platform. Reachable SILs under this fault model: [0, 1]. Either add a pattern, relax the requirement, or select a different fault model.
+",,,,
+catalogue,1,4,catsweep_k1_i4,BUILD_FAIL,24,22,22,3,,,,,,BUILD_FAIL,,,,,,,,"  pattern library: 1 records, all well formed (none)
+ERROR: actor 'a0' requires SIL 3 under fault model 'random_hw', but no pattern in the library both achieves it and is placeable on this platform. Reachable SILs under this fault model: [0, 1]. Either add a pattern, relax the requirement, or select a different fault model.
+",,,,
+catalogue,3,0,catsweep_k3_i0,READY,24,21,21,3,37,OPTIMAL,6.317,87,True,OPTIMAL,6.41,10139,87,8,10139,12031,True,,87,OPTIMAL,0.62,True
+catalogue,3,1,catsweep_k3_i1,READY,24,24,24,3,42,OPTIMAL,12.737,79,True,OPTIMAL,178.423,13026,79,8,13026,14785,True,,79,OPTIMAL,0.667,True
+catalogue,3,2,catsweep_k3_i2,READY,24,24,24,3,42,OPTIMAL,7.108,93,True,OPTIMAL,13.283,15163,93,8,15163,14786,True,,93,OPTIMAL,0.676,True
+catalogue,3,3,catsweep_k3_i3,READY,24,24,24,3,42,OPTIMAL,10.715,61,True,OPTIMAL,12.629,15456,61,8,15456,14786,True,,61,OPTIMAL,0.673,True
+catalogue,3,4,catsweep_k3_i4,READY,24,24,24,3,42,OPTIMAL,12.833,70,True,OPTIMAL,14.603,16542,70,8,16542,14786,True,,70,OPTIMAL,0.685,True
+catalogue,5,0,catsweep_k5_i0,READY,24,23,23,3,53,OPTIMAL,29.181,84,True,OPTIMAL,18.223,12870,84,8,12870,22024,True,,84,OPTIMAL,0.87,True
+catalogue,5,1,catsweep_k5_i1,READY,24,20,20,3,45,SAT,300.47,58,False,OPTIMAL,14.039,12034,58,8,12034,16696,True,,58,OPTIMAL,0.74,True
+catalogue,5,2,catsweep_k5_i2,READY,24,24,24,3,54,OPTIMAL,11.349,144,True,OPTIMAL,8.775,14896,144,8,14896,22735,True,,144,OPTIMAL,0.88,True
+catalogue,5,3,catsweep_k5_i3,READY,24,24,24,3,54,OPTIMAL,75.649,67,True,OPTIMAL,133.145,13112,67,8,13112,22736,True,,67,OPTIMAL,0.867,True
+catalogue,5,4,catsweep_k5_i4,READY,24,23,23,3,53,SAT,300.576,64,False,OPTIMAL,101.58,13206,64,8,13206,22026,True,,64,OPTIMAL,0.863,True
+catalogue,9,0,catsweep_k9_i0,READY,24,24,24,3,78,OPTIMAL,28.448,119,True,OPTIMAL,278.953,14870,119,8,14870,43190,True,,119,OPTIMAL,1.464,True
+catalogue,9,1,catsweep_k9_i1,READY,24,24,24,3,78,OPTIMAL,61.452,183,True,OPTIMAL,113.361,12151,183,8,12151,43198,True,,183,OPTIMAL,1.455,True
+catalogue,9,2,catsweep_k9_i2,READY,24,23,23,3,76,SAT,300.952,65,False,UNKNOWN,600.909,,,,,,,,,,,
+catalogue,9,3,catsweep_k9_i3,READY,24,18,18,3,57,OPTIMAL,42.558,55,True,OPTIMAL,39.6,8829,55,8,8829,25012,True,,55,OPTIMAL,0.945,True
+catalogue,9,4,catsweep_k9_i4,READY,24,21,21,3,68,OPTIMAL,42.383,97,True,OPTIMAL,23.578,11966,97,8,11966,33955,True,,97,OPTIMAL,1.224,True

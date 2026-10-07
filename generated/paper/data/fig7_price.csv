@@ -1,0 +1,6 @@
+factor,myklebust2015,myklebust2015_cores,klosterman,klosterman_cores,do178b,do178b_cores,klosterman_low,klosterman_low_cores
+1,97.81,3,20.97,3,59.06,3,7.95,3
+2,86.57,3,14.65,3,52.68,3,3.42,3
+4,69.49,3,6.46,3,42.56,3,0.00,1
+8,47.73,3,0.00,1,28.91,3,0.00,1
+16,25.50,3,0.00,1,14.00,3,0.00,1

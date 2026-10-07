@@ -1,0 +1,26 @@
+instance,config,rep,status,seconds,step1_seconds,step2_seconds,mu_max,mu_list,nprocs,hw_cost,dev_cost,promotion_cost,power,verify_ok,published_bound,mu_solver,pin_status,pin_seconds,pin_ok
+r_a_sobel,onestep,0,OPTIMAL,0.488,,,384,[384],2,16,400,0,102,True,400,400,OPTIMAL,0.414,True
+r_a_sobel,onestep,1,OPTIMAL,0.493,,,384,[384],2,16,400,0,102,True,400,400,OPTIMAL,0.433,True
+r_a_sobel,onestep,2,OPTIMAL,0.483,,,384,[384],2,16,400,0,102,True,400,400,OPTIMAL,0.401,True
+r_a_sobel,onestep,3,OPTIMAL,0.46,,,384,[384],2,16,400,0,102,True,400,400,OPTIMAL,0.427,True
+r_a_sobel,onestep,4,OPTIMAL,0.49,,,384,[384],2,16,400,0,102,True,400,400,OPTIMAL,0.415,True
+r_b_susan,onestep,0,OPTIMAL,0.533,,,1659,[1659],1,12,500,0,173,True,2050,2050,OPTIMAL,0.395,True
+r_b_susan,onestep,1,OPTIMAL,0.49,,,1659,[1659],1,12,500,0,173,True,2050,2050,OPTIMAL,0.413,True
+r_b_susan,onestep,2,OPTIMAL,0.52,,,1659,[1659],1,12,500,0,173,True,2050,2050,OPTIMAL,0.413,True
+r_b_susan,onestep,3,OPTIMAL,0.53,,,1659,[1659],1,12,500,0,173,True,2050,2050,OPTIMAL,0.383,True
+r_b_susan,onestep,4,OPTIMAL,0.533,,,1659,[1659],1,12,500,0,173,True,2050,2050,OPTIMAL,0.417,True
+r_c_rasta,onestep,0,OPTIMAL,0.596,,,543,[543],2,18,700,0,151,True,550,550,OPTIMAL,0.411,True
+r_c_rasta,onestep,1,OPTIMAL,0.575,,,523,[523],2,18,700,0,151,True,550,550,OPTIMAL,0.403,True
+r_c_rasta,onestep,2,OPTIMAL,0.581,,,523,[523],2,18,700,0,151,True,550,550,OPTIMAL,0.452,True
+r_c_rasta,onestep,3,OPTIMAL,0.65,,,523,[523],2,18,700,0,151,True,550,550,OPTIMAL,0.412,True
+r_c_rasta,onestep,4,OPTIMAL,0.591,,,523,[523],2,18,700,0,151,True,550,550,OPTIMAL,0.392,True
+r_all,onestep,0,OPTIMAL,7.716,,,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.668,True
+r_all,onestep,1,OPTIMAL,7.263,,,9272,"[384, 1659, 523, 9272]",6,54,3239,39,477,True,,9272,OPTIMAL,0.616,True
+r_all,onestep,2,OPTIMAL,6.998,,,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.597,True
+r_all,onestep,3,OPTIMAL,6.972,,,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.598,True
+r_all,onestep,4,OPTIMAL,7.518,,,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.64,True
+r_all,twostep,0,OPTIMAL,9.613,3.775,5.838,9272,"[384, 1659, 523, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.612,True
+r_all,twostep,1,OPTIMAL,9.235,3.718,5.517,9272,"[384, 1659, 523, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.617,True
+r_all,twostep,2,OPTIMAL,9.077,3.579,5.498,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.598,True
+r_all,twostep,3,OPTIMAL,9.001,3.527,5.474,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.601,True
+r_all,twostep,4,OPTIMAL,8.929,3.513,5.416,9272,"[384, 1659, 543, 9272]",6,54,3200,0,477,True,,9272,OPTIMAL,0.607,True

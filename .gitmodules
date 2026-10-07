@@ -1,0 +1,3 @@
+[submodule "safedse"]
+	path = safedse
+	url = https://github.com/SBU-CPS-Lab/SafeDSE.git

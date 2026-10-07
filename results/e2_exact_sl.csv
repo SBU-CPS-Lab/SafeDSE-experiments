@@ -1,0 +1,2 @@
+source,variant,instance,factor,baseline,objective,old_value,b_value,same_binding,b_on_old_binding_status,b_on_old_binding_value,b_on_old_binding_verify_ok,old_on_b_binding_status,old_on_b_binding_value,old_on_b_binding_verify_ok,cause
+e2_var,tok2,p_rasta,1.10,SL,TOTALCOST,3581,3578,True,OPTIMAL,3578,True,OPTIMAL,3581,True,period-pessimism

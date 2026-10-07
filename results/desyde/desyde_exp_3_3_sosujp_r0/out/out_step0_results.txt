@@ -1,0 +1,426 @@
+~~~~~ *** BEGIN OF MULTI-STEP (STEP 0) SOLUTIONS *** ~~~~~
+*** Solution number: 1, after 98 ms, search nodes: 28, fail: 2, propagate: 766487, depth: 26, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 7722}
+Sys utilization: 440
+ProcsUsed utilization: 705
+sys power: 352600
+sys power (only used parts): 352600
+sys area: 80
+sys area (only used parts): 50
+sys cost: 80
+sys cost (only used parts): 50
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 19 21 22 20 23 24 29 || 2 4 7 9 30 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 0, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 24, 27, 32, 3, 4, 7, 8, 33, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 14, 23, 10, 18, 11, 20, 12, 22, 13, 24, 25, 26, 16, 27, 32, 1, 4, 6, 8, 33, 34, 35, 0}
+----------------------------------------
+*** Solution number: 2, after 130 ms, search nodes: 38, fail: 4, propagate: 850841, depth: 26, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 7590}
+Sys utilization: 442
+ProcsUsed utilization: 590
+sys power: 354300
+sys power (only used parts): 354300
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 19 21 22 20 23 29 30 || 2 4 7 9 24 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 24, 27, 32, 3, 4, 7, 8, 33, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 14, 23, 10, 18, 11, 20, 12, 22, 13, 24, 25, 26, 16, 32, 33, 1, 4, 6, 8, 27, 34, 35, 0}
+----------------------------------------
+*** Solution number: 3, after 767 ms, search nodes: 384, fail: 165, propagate: 5701587, depth: 29, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 7470}
+Sys utilization: 444
+ProcsUsed utilization: 593
+sys power: 355900
+sys power (only used parts): 355900
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 21 20 30 22 18 23 24 29 || 2 4 7 9 19 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 14, 15, 13, 16, 17, 18, 19, 20, 21, 25, 24, 33, 26, 22, 27, 32, 3, 4, 7, 8, 23, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 14, 33, 21, 10, 18, 11, 20, 12, 22, 23, 24, 25, 26, 16, 27, 32, 1, 4, 6, 8, 13, 34, 35, 0}
+----------------------------------------
+*** Solution number: 4, after 768 ms, search nodes: 384, fail: 165, propagate: 5701587, depth: 29, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 5066}
+Sys utilization: 506
+ProcsUsed utilization: 675
+sys power: 405000
+sys power (only used parts): 405000
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 19 21 22 20 29 24 30 || 2 4 7 9 23 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 24, 32, 33, 3, 4, 7, 8, 27, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 14, 23, 10, 18, 11, 20, 12, 22, 13, 24, 25, 26, 32, 27, 33, 1, 4, 6, 8, 16, 34, 35, 0}
+----------------------------------------
+*** Solution number: 5, after 986 ms, search nodes: 539, fail: 228, propagate: 9098631, depth: 29, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 4726}
+Sys utilization: 519
+ProcsUsed utilization: 693
+sys power: 415900
+sys power (only used parts): 415900
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 19 20 21 29 23 24 30 || 2 4 7 9 22 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 32, 27, 33, 3, 4, 7, 8, 26, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 23, 32, 10, 18, 11, 20, 12, 22, 13, 24, 14, 27, 26, 16, 33, 1, 4, 6, 8, 25, 34, 35, 0}
+----------------------------------------
+*** Solution number: 6, after 1121 ms, search nodes: 617, fail: 245, propagate: 10132303, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 4474}
+Sys utilization: 531
+ProcsUsed utilization: 708
+sys power: 425100
+sys power (only used parts): 425100
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 19 20 18 29 22 23 24 30 || 2 4 7 9 21 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 22, 32, 26, 27, 33, 3, 4, 7, 8, 25, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 13, 21, 25, 10, 18, 11, 20, 12, 22, 23, 24, 32, 27, 26, 16, 33, 1, 4, 6, 8, 14, 34, 35, 0}
+----------------------------------------
+*** Solution number: 7, after 1122 ms, search nodes: 617, fail: 245, propagate: 10132303, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 4386}
+Sys utilization: 535
+ProcsUsed utilization: 714
+sys power: 428600
+sys power (only used parts): 428600
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 19 21 22 29 23 24 30 || 2 4 7 9 20 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 32, 27, 33, 3, 4, 7, 8, 24, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 14, 32, 10, 18, 11, 20, 12, 22, 13, 27, 25, 26, 24, 16, 33, 1, 4, 6, 8, 23, 34, 35, 0}
+----------------------------------------
+*** Solution number: 8, after 1219 ms, search nodes: 629, fail: 250, propagate: 9845187, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 4222}
+Sys utilization: 544
+ProcsUsed utilization: 725
+sys power: 435400
+sys power (only used parts): 435400
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 20 21 29 22 23 24 30 || 2 4 7 9 19 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 32, 26, 27, 33, 3, 4, 7, 8, 23, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 14, 25, 10, 18, 11, 20, 12, 22, 23, 24, 32, 27, 26, 16, 33, 1, 4, 6, 8, 13, 34, 35, 0}
+----------------------------------------
+*** Solution number: 9, after 1220 ms, search nodes: 629, fail: 250, propagate: 9845187, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 4134}
+Sys utilization: 549
+ProcsUsed utilization: 732
+sys power: 439300
+sys power (only used parts): 439300
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 18 19 29 22 20 23 24 30 || 2 4 7 9 21 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 32, 26, 24, 27, 33, 3, 4, 7, 8, 25, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 21, 32, 23, 10, 18, 11, 20, 12, 22, 13, 27, 25, 26, 24, 16, 33, 1, 4, 6, 8, 14, 34, 35, 0}
+----------------------------------------
+*** Solution number: 10, after 1278 ms, search nodes: 606, fail: 236, propagate: 9129760, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 4, 5, 4, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 4046}
+Sys utilization: 554
+ProcsUsed utilization: 739
+sys power: 443400
+sys power (only used parts): 443400
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 19 20 21 22 29 23 24 30 || 2 4 7 9 18 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 32, 27, 33, 3, 4, 7, 8, 22, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 13, 14, 32, 10, 18, 11, 20, 12, 27, 23, 24, 25, 26, 22, 16, 33, 1, 4, 6, 8, 21, 34, 35, 0}
+----------------------------------------
+*** Solution number: 11, after 1283 ms, search nodes: 606, fail: 236, propagate: 9129760, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 3882}
+Sys utilization: 564
+ProcsUsed utilization: 752
+sys power: 451500
+sys power (only used parts): 451500
+sys area: 80
+sys area (only used parts): 60
+sys cost: 80
+sys cost (only used parts): 60
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 17 18 16 29 21 22 20 23 24 30 || 2 4 7 9 19 31 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 20, 32, 25, 26, 24, 27, 33, 3, 4, 7, 8, 23, 34, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 12, 19, 14, 23, 10, 18, 11, 20, 21, 22, 32, 27, 25, 26, 24, 16, 33, 1, 4, 6, 8, 13, 34, 35, 0}
+----------------------------------------
+*** Solution number: 12, after 1283 ms, search nodes: 606, fail: 236, propagate: 9129760, depth: 40, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 4, 5, 6, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 3794}
+Sys utilization: 570
+ProcsUsed utilization: 651
+sys power: 456100
+sys power (only used parts): 456100
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 19 31 29 22 18 23 24 30 || 2 4 7 9 20 21 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 1, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 34, 32, 26, 22, 27, 33, 3, 4, 7, 8, 24, 25, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 13, 32, 21, 10, 18, 11, 20, 12, 22, 34, 27, 25, 26, 24, 16, 33, 1, 4, 6, 8, 23, 14, 35, 0}
+----------------------------------------
+*** Solution number: 13, after 1525 ms, search nodes: 822, fail: 285, propagate: 8925747, depth: 34, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 5, 5, 6, 5, 5, 5}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 3588}
+Sys utilization: 584
+ProcsUsed utilization: 668
+sys power: 467700
+sys power (only used parts): 467700
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 29 31 20 22 18 23 24 30 || 2 4 7 9 19 21 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 0, 1, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 32, 34, 24, 26, 22, 27, 33, 3, 4, 7, 8, 23, 25, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 32, 23, 21, 10, 18, 11, 20, 12, 22, 34, 27, 25, 26, 24, 16, 33, 1, 4, 6, 8, 13, 14, 35, 0}
+----------------------------------------
+*** Solution number: 14, after 1526 ms, search nodes: 685, fail: 285, propagate: 8925747, depth: 34, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 3542}
+Sys utilization: 588
+ProcsUsed utilization: 672
+sys power: 470500
+sys power (only used parts): 470500
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 16 17 29 19 21 22 20 30 24 31 || 2 4 7 9 18 23 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 32, 23, 25, 26, 24, 33, 34, 3, 4, 7, 8, 22, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 19, 32, 14, 23, 10, 18, 11, 20, 12, 22, 13, 24, 25, 26, 33, 27, 34, 1, 4, 6, 8, 21, 16, 35, 0}
+----------------------------------------
+*** Solution number: 15, after 1625 ms, search nodes: 703, fail: 301, propagate: 9155693, depth: 34, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 3290}
+Sys utilization: 609
+ProcsUsed utilization: 696
+sys power: 487200
+sys power (only used parts): 487200
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 15 16 14 29 18 19 21 22 20 30 24 31 || 2 4 7 9 17 23 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 18, 32, 22, 23, 25, 26, 24, 33, 34, 3, 4, 7, 8, 21, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 11, 17, 21, 14, 23, 10, 18, 19, 20, 32, 22, 13, 24, 25, 26, 33, 27, 34, 1, 4, 6, 8, 12, 16, 35, 0}
+----------------------------------------
+*** Solution number: 16, after 2390 ms, search nodes: 2577, fail: 1159, propagate: 19485530, depth: 38, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 6, 6, 6}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 3202}
+Sys utilization: 617
+ProcsUsed utilization: 705
+sys power: 493600
+sys power (only used parts): 493600
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 17 18 29 19 21 30 20 23 24 31 || 2 4 7 9 16 22 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 32, 23, 25, 33, 24, 27, 34, 3, 4, 7, 8, 20, 26, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 12, 32, 14, 23, 10, 18, 11, 20, 21, 22, 13, 24, 33, 27, 26, 16, 34, 1, 4, 6, 8, 19, 25, 35, 0}
+----------------------------------------
+*** Solution number: 17, after 2782 ms, search nodes: 1313, fail: 591, propagate: 14338037, depth: 34, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 6, 6}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 2950}
+Sys utilization: 642
+ProcsUsed utilization: 734
+sys power: 514300
+sys power (only used parts): 514300
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 14 15 29 17 18 19 20 21 22 30 24 31 || 2 4 7 9 16 23 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 32, 21, 22, 23, 24, 25, 26, 33, 34, 3, 4, 7, 8, 20, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 17, 32, 21, 23, 25, 10, 18, 11, 20, 12, 22, 13, 24, 14, 26, 33, 27, 34, 1, 4, 6, 8, 19, 16, 35, 0}
+----------------------------------------
+*** Solution number: 18, after 2839 ms, search nodes: 1341, fail: 598, propagate: 14667411, depth: 34, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 2698}
+Sys utilization: 673
+ProcsUsed utilization: 769
+sys power: 538700
+sys power (only used parts): 538700
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 13 14 12 29 16 17 19 21 18 22 20 30 24 31 || 2 4 7 9 15 23 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 17, 18, 16, 32, 20, 21, 23, 25, 22, 26, 24, 33, 34, 3, 4, 7, 8, 19, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 10, 15, 19, 13, 21, 23, 17, 18, 32, 20, 12, 22, 14, 24, 25, 26, 33, 27, 34, 1, 4, 6, 8, 11, 16, 35, 0}
+----------------------------------------
+*** Solution number: 19, after 3477 ms, search nodes: 1711, fail: 775, propagate: 18593668, depth: 37, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 5, 5, 5, 6, 6}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 2656}
+Sys utilization: 679
+ProcsUsed utilization: 776
+sys power: 543200
+sys power (only used parts): 543200
+sys area: 80
+sys area (only used parts): 70
+sys cost: 80
+sys cost (only used parts): 70
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 15 16 29 18 19 20 14 21 22 30 24 31 || 2 4 7 9 17 23 32 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 0, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 32, 22, 23, 24, 18, 25, 26, 33, 34, 3, 4, 7, 8, 21, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 11, 32, 13, 17, 25, 10, 18, 19, 20, 21, 22, 23, 24, 14, 26, 33, 27, 34, 1, 4, 6, 8, 12, 16, 35, 0}
+----------------------------------------
+*** Solution number: 20, after 3509 ms, search nodes: 1739, fail: 783, propagate: 18725253, depth: 37, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4, 5, 4, 5, 5, 5, 5, 5, 5, 5, 6, 7}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 2610}
+Sys utilization: 685
+ProcsUsed utilization: 685
+sys power: 548300
+sys power (only used parts): 548300
+sys area: 80
+sys area (only used parts): 80
+sys cost: 80
+sys cost (only used parts): 80
+Next: 1 25 3 26 5 6 27 8 28 10 11 12 13 15 16 29 18 19 20 14 21 22 30 31 32 || 2 4 7 9 17 23 24 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 1, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 32, 22, 23, 24, 18, 25, 26, 33, 34, 3, 4, 7, 8, 21, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 15, 11, 32, 13, 17, 25, 10, 18, 19, 20, 21, 22, 23, 24, 14, 26, 33, 34, 35, 1, 4, 6, 8, 12, 16, 27, 0}
+----------------------------------------
+*** Solution number: 21, after 71582 ms, search nodes: 77289, fail: 38527, propagate: 837695339, depth: 38, nogoods: 0, restarts: 0 ***
+----------------------------------------
+Proc: {0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 5, 4, 5, 4, 5, 4, 5, 5, 5, 5, 5, 6, 7}
+proc mode: {0, 0, 0, 0, 0, 0, 0, 0}
+ic mode: 0
+Period: {397, 2025, 2544}
+Sys utilization: 695
+ProcsUsed utilization: 695
+sys power: 556000
+sys power (only used parts): 556000
+sys area: 80
+sys area (only used parts): 80
+sys cost: 80
+sys cost (only used parts): 80
+Next: 1 25 3 26 5 6 27 8 28 10 11 13 14 15 16 17 18 29 19 20 21 22 30 31 32 || 2 4 7 9 12 23 24 0 
+
+TDMA slots: {1, 0, 1, 0, 1, 1, 1, 0}
+Sending-order: {1, 2, 28, 29, 5, 6, 30, 31, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 32, 23, 24, 25, 26, 33, 34, 3, 4, 7, 8, 16, 27, 35, 0}
+Receiving-order: {28, 3, 29, 2, 5, 30, 7, 31, 9, 10, 11, 12, 32, 23, 25, 17, 18, 19, 20, 21, 22, 13, 24, 14, 26, 33, 34, 35, 1, 4, 6, 8, 15, 16, 27, 0}
+----------------------------------------
+===== search ended after: 1871 s (1871587 ms) due to time-out! (with 21 incremental timer reset(s).) =====
+21 solutions found
+search nodes: 1941348, fail: 970556, propagate: 22649702685, depth: 44, nogoods: 0, restarts: 0 ***
+
+~~~~~ *** END OF MULTI-STEP (STEP 0) SOLUTIONS *** ~~~~~

@@ -1,0 +1,961 @@
+variant,instance,rule,actor,sil,chosen,key,runner_up,runner_up_key,order_tie
+base,p_rasta,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,p_rasta,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,p_rasta,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,p_rasta,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,p_rasta,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,p_rasta,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,p_rasta,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,p_rasta,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,p_rasta,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,p_rasta,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,p_rasta,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,p_rasta,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,p_rasta,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,p_rasta,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+base,p_rasta,PFlight,frontEnd,3,high_sil_isolated_checker,"[42, 520, 4]",mixed_sil_doer_checker,"[84, 1039, 5]",False
+base,p_rasta,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+base,p_rasta,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+base,p_rasta,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+base,p_rasta,PFlight,compJah,3,high_sil_isolated_checker,"[51, 520, 4]",mixed_sil_doer_checker,"[102, 1039, 5]",False
+base,p_rasta,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+base,p_rasta,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+base,p_rasta,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 42, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+base,p_rasta,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+base,p_rasta,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+base,p_rasta,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+base,p_rasta,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 51, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+base,p_rasta,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+base,p_rasta,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+base,f_random_hw,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,f_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,f_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,f_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,f_random_hw,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,f_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,f_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,f_random_hw,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,f_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_random_hw,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,f_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+base,f_random_hw,PFlight,frontEnd,3,high_sil_isolated_checker,"[42, 520, 4]",mixed_sil_doer_checker,"[84, 1039, 5]",False
+base,f_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+base,f_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+base,f_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+base,f_random_hw,PFlight,compJah,3,high_sil_isolated_checker,"[51, 520, 4]",mixed_sil_doer_checker,"[102, 1039, 5]",False
+base,f_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+base,f_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+base,f_random_hw,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 42, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+base,f_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+base,f_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+base,f_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+base,f_random_hw,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 51, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+base,f_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+base,f_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+base,d_random_hw,PFmin,frontEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,d_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,d_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,d_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,d_random_hw,PFmin,compJah,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,d_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,d_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,d_random_hw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+base,d_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_random_hw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+base,d_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+base,d_random_hw,PFlight,frontEnd,2,low_sil_doer_checker,"[42, 227, 1]",low_sil_diverse_doer_checker,"[42, 227, 8]",True
+base,d_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+base,d_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+base,d_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+base,d_random_hw,PFlight,compJah,2,low_sil_doer_checker,"[51, 227, 1]",low_sil_diverse_doer_checker,"[51, 227, 8]",True
+base,d_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+base,d_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+base,d_random_hw,PFcheap,frontEnd,2,low_sil_doer_checker,"[227, 42, 1]",low_sil_diverse_doer_checker,"[227, 42, 8]",True
+base,d_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+base,d_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+base,d_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+base,d_random_hw,PFcheap,compJah,2,low_sil_doer_checker,"[227, 51, 1]",low_sil_diverse_doer_checker,"[227, 51, 8]",True
+base,d_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+base,d_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+base,d_systematic_sw,PFmin,frontEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFmin,compJah,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,d_systematic_sw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+base,d_systematic_sw,PFlight,frontEnd,2,same_cpu_doer_checker,"[42, 226, 2]",low_sil_diverse_doer_checker,"[42, 227, 8]",False
+base,d_systematic_sw,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[9, 114, 2]",False
+base,d_systematic_sw,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[70, 114, 2]",False
+base,d_systematic_sw,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[32, 114, 2]",False
+base,d_systematic_sw,PFlight,compJah,2,same_cpu_doer_checker,"[51, 226, 2]",low_sil_diverse_doer_checker,"[51, 227, 8]",False
+base,d_systematic_sw,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[58, 114, 2]",False
+base,d_systematic_sw,PFlight,backEnd,2,same_cpu_doer_checker,"[40, 226, 2]",low_sil_diverse_doer_checker,"[40, 227, 8]",False
+base,d_systematic_sw,PFcheap,frontEnd,2,same_cpu_doer_checker,"[226, 42, 2]",low_sil_diverse_doer_checker,"[227, 42, 8]",False
+base,d_systematic_sw,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 9, 2]",False
+base,d_systematic_sw,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 70, 2]",False
+base,d_systematic_sw,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 32, 2]",False
+base,d_systematic_sw,PFcheap,compJah,2,same_cpu_doer_checker,"[226, 51, 2]",low_sil_diverse_doer_checker,"[227, 51, 8]",False
+base,d_systematic_sw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 58, 2]",False
+base,d_systematic_sw,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 40, 2]",low_sil_diverse_doer_checker,"[227, 40, 8]",False
+base,f_sw3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+base,f_sw3,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,f_sw3,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,f_sw3,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,f_sw3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+base,f_sw3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+base,f_sw3,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,f_sw3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,f_sw3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_sw3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_sw3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_sw3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,f_sw3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_sw3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+base,f_sw3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[84, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+base,f_sw3,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[9, 114, 2]",False
+base,f_sw3,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[70, 114, 2]",False
+base,f_sw3,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[32, 114, 2]",False
+base,f_sw3,PFlight,compJah,3,mixed_sil_doer_checker,"[102, 1039, 5]",two_of_two_high_sil,"[170, 520, 3]",False
+base,f_sw3,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[58, 114, 2]",False
+base,f_sw3,PFlight,backEnd,2,same_cpu_doer_checker,"[40, 226, 2]",low_sil_diverse_doer_checker,"[40, 227, 8]",False
+base,f_sw3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 84, 5]",False
+base,f_sw3,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 9, 2]",False
+base,f_sw3,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 70, 2]",False
+base,f_sw3,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 32, 2]",False
+base,f_sw3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 102, 5]",False
+base,f_sw3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 58, 2]",False
+base,f_sw3,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 40, 2]",low_sil_diverse_doer_checker,"[227, 40, 8]",False
+base,f_both3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+base,f_both3,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,f_both3,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,f_both3,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,f_both3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+base,f_both3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,f_both3,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",,,False
+base,f_both3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,f_both3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_both3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_both3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_both3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,f_both3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,f_both3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",,,False
+base,f_both3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[84, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+base,f_both3,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[9, 115, 8]",False
+base,f_both3,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[70, 115, 8]",False
+base,f_both3,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[32, 115, 8]",False
+base,f_both3,PFlight,compJah,3,mixed_sil_doer_checker,"[102, 1039, 5]",two_of_two_high_sil,"[170, 520, 3]",False
+base,f_both3,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[58, 115, 8]",False
+base,f_both3,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[40, 227, 8]",,,False
+base,f_both3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 84, 5]",False
+base,f_both3,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 9, 8]",False
+base,f_both3,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 70, 8]",False
+base,f_both3,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 32, 8]",False
+base,f_both3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 102, 5]",False
+base,f_both3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 58, 8]",False
+base,f_both3,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 40, 8]",,,False
+base,c_pat,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,c_pat,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,c_pat,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,c_pat,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,c_pat,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,c_pat,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,c_pat,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+base,c_pat,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,c_pat,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,c_pat,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,c_pat,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,c_pat,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,c_pat,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,c_pat,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+base,c_pat,PFlight,frontEnd,3,high_sil_isolated_checker,"[42, 520, 4]",mixed_sil_doer_checker,"[84, 1039, 5]",False
+base,c_pat,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+base,c_pat,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+base,c_pat,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+base,c_pat,PFlight,compJah,3,high_sil_isolated_checker,"[51, 520, 4]",mixed_sil_doer_checker,"[102, 1039, 5]",False
+base,c_pat,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+base,c_pat,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+base,c_pat,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 42, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+base,c_pat,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+base,c_pat,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+base,c_pat,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+base,c_pat,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 51, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+base,c_pat,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+base,c_pat,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+base,pc_sobel,PFmin,get_pixel,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+base,pc_sobel,PFmin,gx,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,pc_sobel,PFmin,gy,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,pc_sobel,PFmin,abs,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+base,pc_sobel,PFmax,get_pixel,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+base,pc_sobel,PFmax,gx,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,pc_sobel,PFmax,gy,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,pc_sobel,PFmax,abs,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+base,pc_sobel,PFlight,get_pixel,3,high_sil_isolated_checker,"[77, 520, 4]",mixed_sil_doer_checker,"[154, 1039, 5]",False
+base,pc_sobel,PFlight,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[18, 115, 1]",False
+base,pc_sobel,PFlight,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[18, 115, 1]",False
+base,pc_sobel,PFlight,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[30, 115, 1]",False
+base,pc_sobel,PFcheap,get_pixel,3,high_sil_isolated_checker,"[520, 77, 4]",two_of_two_high_sil,"[520, 256, 3]",False
+base,pc_sobel,PFcheap,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 18, 1]",False
+base,pc_sobel,PFcheap,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 18, 1]",False
+base,pc_sobel,PFcheap,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 30, 1]",False
+base,v_nvp,PFmin,frontEnd,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+base,v_nvp,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+base,v_nvp,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+base,v_nvp,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+base,v_nvp,PFmin,compJah,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+base,v_nvp,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+base,v_nvp,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",,,False
+base,v_nvp,PFmax,frontEnd,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+base,v_nvp,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+base,v_nvp,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+base,v_nvp,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+base,v_nvp,PFmax,compJah,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+base,v_nvp,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+base,v_nvp,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",,,False
+base,v_nvp,PFlight,frontEnd,3,nvp_three_version,"[324, 1558, 2]",,,False
+base,v_nvp,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[9, 115, 1]",False
+base,v_nvp,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[70, 115, 1]",False
+base,v_nvp,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[32, 115, 1]",False
+base,v_nvp,PFlight,compJah,3,nvp_three_version,"[391, 1558, 2]",,,False
+base,v_nvp,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[58, 115, 1]",False
+base,v_nvp,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[40, 227, 1]",,,False
+base,v_nvp,PFcheap,frontEnd,3,nvp_three_version,"[1558, 324, 2]",,,False
+base,v_nvp,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 9, 1]",False
+base,v_nvp,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 70, 1]",False
+base,v_nvp,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 32, 1]",False
+base,v_nvp,PFcheap,compJah,3,nvp_three_version,"[1558, 391, 2]",,,False
+base,v_nvp,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 58, 1]",False
+base,v_nvp,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 40, 1]",,,False
+tok2,p_rasta,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,p_rasta,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,p_rasta,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,p_rasta,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,p_rasta,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,p_rasta,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,p_rasta,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,p_rasta,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,p_rasta,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,p_rasta,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,p_rasta,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,p_rasta,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,p_rasta,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,p_rasta,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+tok2,p_rasta,PFlight,frontEnd,3,high_sil_isolated_checker,"[42, 520, 4]",mixed_sil_doer_checker,"[84, 1039, 5]",False
+tok2,p_rasta,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+tok2,p_rasta,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+tok2,p_rasta,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+tok2,p_rasta,PFlight,compJah,3,high_sil_isolated_checker,"[51, 520, 4]",mixed_sil_doer_checker,"[102, 1039, 5]",False
+tok2,p_rasta,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+tok2,p_rasta,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+tok2,p_rasta,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 42, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+tok2,p_rasta,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+tok2,p_rasta,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+tok2,p_rasta,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+tok2,p_rasta,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 51, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+tok2,p_rasta,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+tok2,p_rasta,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+tok2,f_random_hw,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,f_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,f_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,f_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,f_random_hw,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,f_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,f_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,f_random_hw,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,f_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_random_hw,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,f_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+tok2,f_random_hw,PFlight,frontEnd,3,high_sil_isolated_checker,"[42, 520, 4]",mixed_sil_doer_checker,"[84, 1039, 5]",False
+tok2,f_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+tok2,f_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+tok2,f_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+tok2,f_random_hw,PFlight,compJah,3,high_sil_isolated_checker,"[51, 520, 4]",mixed_sil_doer_checker,"[102, 1039, 5]",False
+tok2,f_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+tok2,f_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+tok2,f_random_hw,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 42, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+tok2,f_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+tok2,f_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+tok2,f_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+tok2,f_random_hw,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 51, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+tok2,f_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+tok2,f_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+tok2,d_random_hw,PFmin,frontEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFmin,compJah,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+tok2,d_random_hw,PFlight,frontEnd,2,low_sil_doer_checker,"[42, 227, 1]",low_sil_diverse_doer_checker,"[42, 227, 8]",True
+tok2,d_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+tok2,d_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+tok2,d_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+tok2,d_random_hw,PFlight,compJah,2,low_sil_doer_checker,"[51, 227, 1]",low_sil_diverse_doer_checker,"[51, 227, 8]",True
+tok2,d_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+tok2,d_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+tok2,d_random_hw,PFcheap,frontEnd,2,low_sil_doer_checker,"[227, 42, 1]",low_sil_diverse_doer_checker,"[227, 42, 8]",True
+tok2,d_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+tok2,d_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+tok2,d_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+tok2,d_random_hw,PFcheap,compJah,2,low_sil_doer_checker,"[227, 51, 1]",low_sil_diverse_doer_checker,"[227, 51, 8]",True
+tok2,d_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+tok2,d_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+tok2,d_systematic_sw,PFmin,frontEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFmin,compJah,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,d_systematic_sw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+tok2,d_systematic_sw,PFlight,frontEnd,2,same_cpu_doer_checker,"[42, 226, 2]",low_sil_diverse_doer_checker,"[42, 227, 8]",False
+tok2,d_systematic_sw,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[9, 114, 2]",False
+tok2,d_systematic_sw,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[70, 114, 2]",False
+tok2,d_systematic_sw,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[32, 114, 2]",False
+tok2,d_systematic_sw,PFlight,compJah,2,same_cpu_doer_checker,"[51, 226, 2]",low_sil_diverse_doer_checker,"[51, 227, 8]",False
+tok2,d_systematic_sw,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[58, 114, 2]",False
+tok2,d_systematic_sw,PFlight,backEnd,2,same_cpu_doer_checker,"[40, 226, 2]",low_sil_diverse_doer_checker,"[40, 227, 8]",False
+tok2,d_systematic_sw,PFcheap,frontEnd,2,same_cpu_doer_checker,"[226, 42, 2]",low_sil_diverse_doer_checker,"[227, 42, 8]",False
+tok2,d_systematic_sw,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 9, 2]",False
+tok2,d_systematic_sw,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 70, 2]",False
+tok2,d_systematic_sw,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 32, 2]",False
+tok2,d_systematic_sw,PFcheap,compJah,2,same_cpu_doer_checker,"[226, 51, 2]",low_sil_diverse_doer_checker,"[227, 51, 8]",False
+tok2,d_systematic_sw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 58, 2]",False
+tok2,d_systematic_sw,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 40, 2]",low_sil_diverse_doer_checker,"[227, 40, 8]",False
+tok2,f_sw3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+tok2,f_sw3,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,f_sw3,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,f_sw3,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,f_sw3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+tok2,f_sw3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+tok2,f_sw3,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,f_sw3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,f_sw3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_sw3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_sw3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_sw3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,f_sw3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_sw3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+tok2,f_sw3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[84, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+tok2,f_sw3,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[9, 114, 2]",False
+tok2,f_sw3,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[70, 114, 2]",False
+tok2,f_sw3,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[32, 114, 2]",False
+tok2,f_sw3,PFlight,compJah,3,mixed_sil_doer_checker,"[102, 1039, 5]",two_of_two_high_sil,"[170, 520, 3]",False
+tok2,f_sw3,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[58, 114, 2]",False
+tok2,f_sw3,PFlight,backEnd,2,same_cpu_doer_checker,"[40, 226, 2]",low_sil_diverse_doer_checker,"[40, 227, 8]",False
+tok2,f_sw3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 84, 5]",False
+tok2,f_sw3,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 9, 2]",False
+tok2,f_sw3,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 70, 2]",False
+tok2,f_sw3,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 32, 2]",False
+tok2,f_sw3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 102, 5]",False
+tok2,f_sw3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 58, 2]",False
+tok2,f_sw3,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 40, 2]",low_sil_diverse_doer_checker,"[227, 40, 8]",False
+tok2,f_both3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+tok2,f_both3,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,f_both3,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,f_both3,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,f_both3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+tok2,f_both3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,f_both3,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",,,False
+tok2,f_both3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,f_both3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_both3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_both3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_both3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,f_both3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,f_both3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",,,False
+tok2,f_both3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[84, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+tok2,f_both3,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[9, 115, 8]",False
+tok2,f_both3,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[70, 115, 8]",False
+tok2,f_both3,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[32, 115, 8]",False
+tok2,f_both3,PFlight,compJah,3,mixed_sil_doer_checker,"[102, 1039, 5]",two_of_two_high_sil,"[170, 520, 3]",False
+tok2,f_both3,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[58, 115, 8]",False
+tok2,f_both3,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[40, 227, 8]",,,False
+tok2,f_both3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 84, 5]",False
+tok2,f_both3,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 9, 8]",False
+tok2,f_both3,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 70, 8]",False
+tok2,f_both3,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 32, 8]",False
+tok2,f_both3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 102, 5]",False
+tok2,f_both3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 58, 8]",False
+tok2,f_both3,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 40, 8]",,,False
+tok2,c_pat,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,c_pat,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,c_pat,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,c_pat,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,c_pat,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,c_pat,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,c_pat,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+tok2,c_pat,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,c_pat,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,c_pat,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,c_pat,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,c_pat,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,c_pat,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,c_pat,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+tok2,c_pat,PFlight,frontEnd,3,high_sil_isolated_checker,"[42, 520, 4]",mixed_sil_doer_checker,"[84, 1039, 5]",False
+tok2,c_pat,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[9, 115, 1]",False
+tok2,c_pat,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[70, 115, 1]",False
+tok2,c_pat,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[32, 115, 1]",False
+tok2,c_pat,PFlight,compJah,3,high_sil_isolated_checker,"[51, 520, 4]",mixed_sil_doer_checker,"[102, 1039, 5]",False
+tok2,c_pat,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[58, 115, 1]",False
+tok2,c_pat,PFlight,backEnd,2,low_sil_doer_checker,"[40, 227, 1]",low_sil_diverse_doer_checker,"[40, 227, 8]",True
+tok2,c_pat,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 42, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+tok2,c_pat,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 9, 1]",False
+tok2,c_pat,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 70, 1]",False
+tok2,c_pat,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 32, 1]",False
+tok2,c_pat,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 51, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+tok2,c_pat,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 58, 1]",False
+tok2,c_pat,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 40, 1]",low_sil_diverse_doer_checker,"[227, 40, 8]",True
+tok2,pc_sobel,PFmin,get_pixel,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+tok2,pc_sobel,PFmin,gx,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,pc_sobel,PFmin,gy,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,pc_sobel,PFmin,abs,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+tok2,pc_sobel,PFmax,get_pixel,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+tok2,pc_sobel,PFmax,gx,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,pc_sobel,PFmax,gy,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,pc_sobel,PFmax,abs,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+tok2,pc_sobel,PFlight,get_pixel,3,high_sil_isolated_checker,"[77, 520, 4]",mixed_sil_doer_checker,"[154, 1039, 5]",False
+tok2,pc_sobel,PFlight,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[18, 115, 1]",False
+tok2,pc_sobel,PFlight,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[18, 115, 1]",False
+tok2,pc_sobel,PFlight,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[30, 115, 1]",False
+tok2,pc_sobel,PFcheap,get_pixel,3,high_sil_isolated_checker,"[520, 77, 4]",two_of_two_high_sil,"[520, 256, 3]",False
+tok2,pc_sobel,PFcheap,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 18, 1]",False
+tok2,pc_sobel,PFcheap,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 18, 1]",False
+tok2,pc_sobel,PFcheap,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 30, 1]",False
+tok2,v_nvp,PFmin,frontEnd,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+tok2,v_nvp,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmin,compJah,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+tok2,v_nvp,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",,,False
+tok2,v_nvp,PFmax,frontEnd,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+tok2,v_nvp,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmax,compJah,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+tok2,v_nvp,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+tok2,v_nvp,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",,,False
+tok2,v_nvp,PFlight,frontEnd,3,nvp_three_version,"[324, 1558, 2]",,,False
+tok2,v_nvp,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[9, 115, 1]",False
+tok2,v_nvp,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[70, 115, 1]",False
+tok2,v_nvp,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[32, 115, 1]",False
+tok2,v_nvp,PFlight,compJah,3,nvp_three_version,"[391, 1558, 2]",,,False
+tok2,v_nvp,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[58, 115, 1]",False
+tok2,v_nvp,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[40, 227, 1]",,,False
+tok2,v_nvp,PFcheap,frontEnd,3,nvp_three_version,"[1558, 324, 2]",,,False
+tok2,v_nvp,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 9, 1]",False
+tok2,v_nvp,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 70, 1]",False
+tok2,v_nvp,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 32, 1]",False
+tok2,v_nvp,PFcheap,compJah,3,nvp_three_version,"[1558, 391, 2]",,,False
+tok2,v_nvp,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 58, 1]",False
+tok2,v_nvp,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 40, 1]",,,False
+chk10,p_rasta,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,p_rasta,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,p_rasta,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,p_rasta,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,p_rasta,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,p_rasta,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,p_rasta,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,p_rasta,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,p_rasta,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,p_rasta,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,p_rasta,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,p_rasta,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,p_rasta,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,p_rasta,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk10,p_rasta,PFlight,frontEnd,3,high_sil_isolated_checker,"[14, 520, 4]",mixed_sil_doer_checker,"[28, 1039, 5]",False
+chk10,p_rasta,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[3, 115, 1]",False
+chk10,p_rasta,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[24, 115, 1]",False
+chk10,p_rasta,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[11, 115, 1]",False
+chk10,p_rasta,PFlight,compJah,3,high_sil_isolated_checker,"[17, 520, 4]",mixed_sil_doer_checker,"[34, 1039, 5]",False
+chk10,p_rasta,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[19, 115, 1]",False
+chk10,p_rasta,PFlight,backEnd,2,low_sil_doer_checker,"[13, 227, 1]",low_sil_diverse_doer_checker,"[13, 227, 8]",True
+chk10,p_rasta,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 14, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+chk10,p_rasta,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 3, 1]",False
+chk10,p_rasta,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 24, 1]",False
+chk10,p_rasta,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 11, 1]",False
+chk10,p_rasta,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 17, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+chk10,p_rasta,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 19, 1]",False
+chk10,p_rasta,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 13, 1]",low_sil_diverse_doer_checker,"[227, 13, 8]",True
+chk10,f_random_hw,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,f_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,f_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,f_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,f_random_hw,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,f_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,f_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,f_random_hw,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,f_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_random_hw,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,f_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk10,f_random_hw,PFlight,frontEnd,3,high_sil_isolated_checker,"[14, 520, 4]",mixed_sil_doer_checker,"[28, 1039, 5]",False
+chk10,f_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[3, 115, 1]",False
+chk10,f_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[24, 115, 1]",False
+chk10,f_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[11, 115, 1]",False
+chk10,f_random_hw,PFlight,compJah,3,high_sil_isolated_checker,"[17, 520, 4]",mixed_sil_doer_checker,"[34, 1039, 5]",False
+chk10,f_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[19, 115, 1]",False
+chk10,f_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[13, 227, 1]",low_sil_diverse_doer_checker,"[13, 227, 8]",True
+chk10,f_random_hw,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 14, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+chk10,f_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 3, 1]",False
+chk10,f_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 24, 1]",False
+chk10,f_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 11, 1]",False
+chk10,f_random_hw,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 17, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+chk10,f_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 19, 1]",False
+chk10,f_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 13, 1]",low_sil_diverse_doer_checker,"[227, 13, 8]",True
+chk10,d_random_hw,PFmin,frontEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFmin,compJah,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk10,d_random_hw,PFlight,frontEnd,2,low_sil_doer_checker,"[14, 227, 1]",low_sil_diverse_doer_checker,"[14, 227, 8]",True
+chk10,d_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[3, 115, 1]",False
+chk10,d_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[24, 115, 1]",False
+chk10,d_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[11, 115, 1]",False
+chk10,d_random_hw,PFlight,compJah,2,low_sil_doer_checker,"[17, 227, 1]",low_sil_diverse_doer_checker,"[17, 227, 8]",True
+chk10,d_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[19, 115, 1]",False
+chk10,d_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[13, 227, 1]",low_sil_diverse_doer_checker,"[13, 227, 8]",True
+chk10,d_random_hw,PFcheap,frontEnd,2,low_sil_doer_checker,"[227, 14, 1]",low_sil_diverse_doer_checker,"[227, 14, 8]",True
+chk10,d_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 3, 1]",False
+chk10,d_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 24, 1]",False
+chk10,d_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 11, 1]",False
+chk10,d_random_hw,PFcheap,compJah,2,low_sil_doer_checker,"[227, 17, 1]",low_sil_diverse_doer_checker,"[227, 17, 8]",True
+chk10,d_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 19, 1]",False
+chk10,d_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 13, 1]",low_sil_diverse_doer_checker,"[227, 13, 8]",True
+chk10,d_systematic_sw,PFmin,frontEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFmin,compJah,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,d_systematic_sw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk10,d_systematic_sw,PFlight,frontEnd,2,same_cpu_doer_checker,"[14, 226, 2]",low_sil_diverse_doer_checker,"[14, 227, 8]",False
+chk10,d_systematic_sw,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[3, 114, 2]",False
+chk10,d_systematic_sw,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[24, 114, 2]",False
+chk10,d_systematic_sw,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[11, 114, 2]",False
+chk10,d_systematic_sw,PFlight,compJah,2,same_cpu_doer_checker,"[17, 226, 2]",low_sil_diverse_doer_checker,"[17, 227, 8]",False
+chk10,d_systematic_sw,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[19, 114, 2]",False
+chk10,d_systematic_sw,PFlight,backEnd,2,same_cpu_doer_checker,"[13, 226, 2]",low_sil_diverse_doer_checker,"[13, 227, 8]",False
+chk10,d_systematic_sw,PFcheap,frontEnd,2,same_cpu_doer_checker,"[226, 14, 2]",low_sil_diverse_doer_checker,"[227, 14, 8]",False
+chk10,d_systematic_sw,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 3, 2]",False
+chk10,d_systematic_sw,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 24, 2]",False
+chk10,d_systematic_sw,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 11, 2]",False
+chk10,d_systematic_sw,PFcheap,compJah,2,same_cpu_doer_checker,"[226, 17, 2]",low_sil_diverse_doer_checker,"[227, 17, 8]",False
+chk10,d_systematic_sw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 19, 2]",False
+chk10,d_systematic_sw,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 13, 2]",low_sil_diverse_doer_checker,"[227, 13, 8]",False
+chk10,f_sw3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk10,f_sw3,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,f_sw3,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,f_sw3,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,f_sw3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk10,f_sw3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk10,f_sw3,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,f_sw3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,f_sw3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_sw3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_sw3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_sw3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,f_sw3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_sw3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk10,f_sw3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[28, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+chk10,f_sw3,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[3, 114, 2]",False
+chk10,f_sw3,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[24, 114, 2]",False
+chk10,f_sw3,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[11, 114, 2]",False
+chk10,f_sw3,PFlight,compJah,3,mixed_sil_doer_checker,"[34, 1039, 5]",two_of_two_high_sil,"[170, 520, 3]",False
+chk10,f_sw3,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[19, 114, 2]",False
+chk10,f_sw3,PFlight,backEnd,2,same_cpu_doer_checker,"[13, 226, 2]",low_sil_diverse_doer_checker,"[13, 227, 8]",False
+chk10,f_sw3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 28, 5]",False
+chk10,f_sw3,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 3, 2]",False
+chk10,f_sw3,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 24, 2]",False
+chk10,f_sw3,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 11, 2]",False
+chk10,f_sw3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 34, 5]",False
+chk10,f_sw3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 19, 2]",False
+chk10,f_sw3,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 13, 2]",low_sil_diverse_doer_checker,"[227, 13, 8]",False
+chk10,f_both3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk10,f_both3,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,f_both3,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,f_both3,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,f_both3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk10,f_both3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,f_both3,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",,,False
+chk10,f_both3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,f_both3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_both3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_both3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_both3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,f_both3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,f_both3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",,,False
+chk10,f_both3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[28, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+chk10,f_both3,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[3, 115, 8]",False
+chk10,f_both3,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[24, 115, 8]",False
+chk10,f_both3,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[11, 115, 8]",False
+chk10,f_both3,PFlight,compJah,3,mixed_sil_doer_checker,"[34, 1039, 5]",two_of_two_high_sil,"[170, 520, 3]",False
+chk10,f_both3,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[19, 115, 8]",False
+chk10,f_both3,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[13, 227, 8]",,,False
+chk10,f_both3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 28, 5]",False
+chk10,f_both3,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 3, 8]",False
+chk10,f_both3,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 24, 8]",False
+chk10,f_both3,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 11, 8]",False
+chk10,f_both3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 34, 5]",False
+chk10,f_both3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 19, 8]",False
+chk10,f_both3,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 13, 8]",,,False
+chk10,c_pat,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,c_pat,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,c_pat,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,c_pat,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,c_pat,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,c_pat,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,c_pat,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk10,c_pat,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,c_pat,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,c_pat,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,c_pat,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,c_pat,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,c_pat,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,c_pat,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk10,c_pat,PFlight,frontEnd,3,high_sil_isolated_checker,"[14, 520, 4]",mixed_sil_doer_checker,"[28, 1039, 5]",False
+chk10,c_pat,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[3, 115, 1]",False
+chk10,c_pat,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[24, 115, 1]",False
+chk10,c_pat,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[11, 115, 1]",False
+chk10,c_pat,PFlight,compJah,3,high_sil_isolated_checker,"[17, 520, 4]",mixed_sil_doer_checker,"[34, 1039, 5]",False
+chk10,c_pat,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[19, 115, 1]",False
+chk10,c_pat,PFlight,backEnd,2,low_sil_doer_checker,"[13, 227, 1]",low_sil_diverse_doer_checker,"[13, 227, 8]",True
+chk10,c_pat,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 14, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+chk10,c_pat,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 3, 1]",False
+chk10,c_pat,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 24, 1]",False
+chk10,c_pat,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 11, 1]",False
+chk10,c_pat,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 17, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+chk10,c_pat,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 19, 1]",False
+chk10,c_pat,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 13, 1]",low_sil_diverse_doer_checker,"[227, 13, 8]",True
+chk10,pc_sobel,PFmin,get_pixel,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk10,pc_sobel,PFmin,gx,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,pc_sobel,PFmin,gy,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,pc_sobel,PFmin,abs,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk10,pc_sobel,PFmax,get_pixel,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk10,pc_sobel,PFmax,gx,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,pc_sobel,PFmax,gy,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,pc_sobel,PFmax,abs,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk10,pc_sobel,PFlight,get_pixel,3,high_sil_isolated_checker,"[26, 520, 4]",mixed_sil_doer_checker,"[52, 1039, 5]",False
+chk10,pc_sobel,PFlight,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[6, 115, 1]",False
+chk10,pc_sobel,PFlight,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[6, 115, 1]",False
+chk10,pc_sobel,PFlight,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[10, 115, 1]",False
+chk10,pc_sobel,PFcheap,get_pixel,3,high_sil_isolated_checker,"[520, 26, 4]",two_of_two_high_sil,"[520, 256, 3]",False
+chk10,pc_sobel,PFcheap,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 6, 1]",False
+chk10,pc_sobel,PFcheap,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 6, 1]",False
+chk10,pc_sobel,PFcheap,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 10, 1]",False
+chk10,v_nvp,PFmin,frontEnd,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+chk10,v_nvp,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmin,compJah,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+chk10,v_nvp,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",,,False
+chk10,v_nvp,PFmax,frontEnd,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+chk10,v_nvp,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmax,compJah,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+chk10,v_nvp,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk10,v_nvp,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",,,False
+chk10,v_nvp,PFlight,frontEnd,3,nvp_three_version,"[324, 1558, 2]",,,False
+chk10,v_nvp,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[3, 115, 1]",False
+chk10,v_nvp,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[24, 115, 1]",False
+chk10,v_nvp,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[11, 115, 1]",False
+chk10,v_nvp,PFlight,compJah,3,nvp_three_version,"[391, 1558, 2]",,,False
+chk10,v_nvp,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[19, 115, 1]",False
+chk10,v_nvp,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[13, 227, 1]",,,False
+chk10,v_nvp,PFcheap,frontEnd,3,nvp_three_version,"[1558, 324, 2]",,,False
+chk10,v_nvp,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 3, 1]",False
+chk10,v_nvp,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 24, 1]",False
+chk10,v_nvp,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 11, 1]",False
+chk10,v_nvp,PFcheap,compJah,3,nvp_three_version,"[1558, 391, 2]",,,False
+chk10,v_nvp,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 19, 1]",False
+chk10,v_nvp,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 13, 1]",,,False
+chk50,p_rasta,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,p_rasta,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,p_rasta,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,p_rasta,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,p_rasta,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,p_rasta,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,p_rasta,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,p_rasta,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,p_rasta,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,p_rasta,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,p_rasta,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,p_rasta,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,p_rasta,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,p_rasta,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk50,p_rasta,PFlight,frontEnd,3,high_sil_isolated_checker,"[70, 520, 4]",mixed_sil_doer_checker,"[140, 1039, 5]",False
+chk50,p_rasta,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[16, 115, 1]",False
+chk50,p_rasta,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[118, 115, 1]",False
+chk50,p_rasta,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[54, 115, 1]",False
+chk50,p_rasta,PFlight,compJah,3,high_sil_isolated_checker,"[85, 520, 4]",two_of_two_high_sil,"[170, 520, 3]",False
+chk50,p_rasta,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[97, 115, 1]",False
+chk50,p_rasta,PFlight,backEnd,2,low_sil_doer_checker,"[66, 227, 1]",low_sil_diverse_doer_checker,"[66, 227, 8]",True
+chk50,p_rasta,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 70, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+chk50,p_rasta,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 16, 1]",False
+chk50,p_rasta,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 118, 1]",False
+chk50,p_rasta,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 54, 1]",False
+chk50,p_rasta,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 85, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+chk50,p_rasta,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 97, 1]",False
+chk50,p_rasta,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 66, 1]",low_sil_diverse_doer_checker,"[227, 66, 8]",True
+chk50,f_random_hw,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,f_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,f_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,f_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,f_random_hw,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,f_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,f_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,f_random_hw,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,f_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_random_hw,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,f_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk50,f_random_hw,PFlight,frontEnd,3,high_sil_isolated_checker,"[70, 520, 4]",mixed_sil_doer_checker,"[140, 1039, 5]",False
+chk50,f_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[16, 115, 1]",False
+chk50,f_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[118, 115, 1]",False
+chk50,f_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[54, 115, 1]",False
+chk50,f_random_hw,PFlight,compJah,3,high_sil_isolated_checker,"[85, 520, 4]",two_of_two_high_sil,"[170, 520, 3]",False
+chk50,f_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[97, 115, 1]",False
+chk50,f_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[66, 227, 1]",low_sil_diverse_doer_checker,"[66, 227, 8]",True
+chk50,f_random_hw,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 70, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+chk50,f_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 16, 1]",False
+chk50,f_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 118, 1]",False
+chk50,f_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 54, 1]",False
+chk50,f_random_hw,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 85, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+chk50,f_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 97, 1]",False
+chk50,f_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 66, 1]",low_sil_diverse_doer_checker,"[227, 66, 8]",True
+chk50,d_random_hw,PFmin,frontEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFmin,compJah,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_random_hw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk50,d_random_hw,PFlight,frontEnd,2,low_sil_doer_checker,"[70, 227, 1]",low_sil_diverse_doer_checker,"[70, 227, 8]",True
+chk50,d_random_hw,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[16, 115, 1]",False
+chk50,d_random_hw,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[118, 115, 1]",False
+chk50,d_random_hw,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[54, 115, 1]",False
+chk50,d_random_hw,PFlight,compJah,2,low_sil_doer_checker,"[85, 227, 1]",low_sil_diverse_doer_checker,"[85, 227, 8]",True
+chk50,d_random_hw,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[97, 115, 1]",False
+chk50,d_random_hw,PFlight,backEnd,2,low_sil_doer_checker,"[66, 227, 1]",low_sil_diverse_doer_checker,"[66, 227, 8]",True
+chk50,d_random_hw,PFcheap,frontEnd,2,low_sil_doer_checker,"[227, 70, 1]",low_sil_diverse_doer_checker,"[227, 70, 8]",True
+chk50,d_random_hw,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 16, 1]",False
+chk50,d_random_hw,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 118, 1]",False
+chk50,d_random_hw,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 54, 1]",False
+chk50,d_random_hw,PFcheap,compJah,2,low_sil_doer_checker,"[227, 85, 1]",low_sil_diverse_doer_checker,"[227, 85, 8]",True
+chk50,d_random_hw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 97, 1]",False
+chk50,d_random_hw,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 66, 1]",low_sil_diverse_doer_checker,"[227, 66, 8]",True
+chk50,d_systematic_sw,PFmin,frontEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFmin,compJah,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmax,frontEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmax,compJah,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,d_systematic_sw,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk50,d_systematic_sw,PFlight,frontEnd,2,same_cpu_doer_checker,"[70, 226, 2]",low_sil_diverse_doer_checker,"[70, 227, 8]",False
+chk50,d_systematic_sw,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[16, 114, 2]",False
+chk50,d_systematic_sw,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[118, 114, 2]",False
+chk50,d_systematic_sw,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[54, 114, 2]",False
+chk50,d_systematic_sw,PFlight,compJah,2,same_cpu_doer_checker,"[85, 226, 2]",low_sil_diverse_doer_checker,"[85, 227, 8]",False
+chk50,d_systematic_sw,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[97, 114, 2]",False
+chk50,d_systematic_sw,PFlight,backEnd,2,same_cpu_doer_checker,"[66, 226, 2]",low_sil_diverse_doer_checker,"[66, 227, 8]",False
+chk50,d_systematic_sw,PFcheap,frontEnd,2,same_cpu_doer_checker,"[226, 70, 2]",low_sil_diverse_doer_checker,"[227, 70, 8]",False
+chk50,d_systematic_sw,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 16, 2]",False
+chk50,d_systematic_sw,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 118, 2]",False
+chk50,d_systematic_sw,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 54, 2]",False
+chk50,d_systematic_sw,PFcheap,compJah,2,same_cpu_doer_checker,"[226, 85, 2]",low_sil_diverse_doer_checker,"[227, 85, 8]",False
+chk50,d_systematic_sw,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 97, 2]",False
+chk50,d_systematic_sw,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 66, 2]",low_sil_diverse_doer_checker,"[227, 66, 8]",False
+chk50,f_sw3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk50,f_sw3,PFmin,rasta,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,f_sw3,PFmin,powspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,f_sw3,PFmin,audspec,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,f_sw3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk50,f_sw3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",same_cpu_doer_checker,"[1, 1, 1.0, 2]",False
+chk50,f_sw3,PFmin,backEnd,2,same_cpu_doer_checker,"[1, 1, 1.0, 2]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,f_sw3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,f_sw3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_sw3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_sw3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_sw3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,f_sw3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_sw3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",same_cpu_doer_checker,"[-1, 1, 1, 1.0, 2]",False
+chk50,f_sw3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[140, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+chk50,f_sw3,PFlight,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[16, 114, 2]",False
+chk50,f_sw3,PFlight,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[118, 114, 2]",False
+chk50,f_sw3,PFlight,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[54, 114, 2]",False
+chk50,f_sw3,PFlight,compJah,3,two_of_two_high_sil,"[170, 520, 3]",mixed_sil_doer_checker,"[170, 1039, 5]",False
+chk50,f_sw3,PFlight,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[97, 114, 2]",False
+chk50,f_sw3,PFlight,backEnd,2,same_cpu_doer_checker,"[66, 226, 2]",low_sil_diverse_doer_checker,"[66, 227, 8]",False
+chk50,f_sw3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 140, 5]",False
+chk50,f_sw3,PFcheap,rasta,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 16, 2]",False
+chk50,f_sw3,PFcheap,powspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 118, 2]",False
+chk50,f_sw3,PFcheap,audspec,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 54, 2]",False
+chk50,f_sw3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 170, 5]",False
+chk50,f_sw3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",same_cpu_doer_checker,"[114, 97, 2]",False
+chk50,f_sw3,PFcheap,backEnd,2,same_cpu_doer_checker,"[226, 66, 2]",low_sil_diverse_doer_checker,"[227, 66, 8]",False
+chk50,f_both3,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk50,f_both3,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,f_both3,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,f_both3,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,f_both3,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",mixed_sil_doer_checker,"[2, 3, 2.0, 5]",False
+chk50,f_both3,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,f_both3,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",,,False
+chk50,f_both3,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,f_both3,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_both3,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_both3,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_both3,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,f_both3,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,f_both3,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",,,False
+chk50,f_both3,PFlight,frontEnd,3,mixed_sil_doer_checker,"[140, 1039, 5]",two_of_two_high_sil,"[141, 520, 3]",False
+chk50,f_both3,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[16, 115, 8]",False
+chk50,f_both3,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[118, 115, 8]",False
+chk50,f_both3,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[54, 115, 8]",False
+chk50,f_both3,PFlight,compJah,3,two_of_two_high_sil,"[170, 520, 3]",mixed_sil_doer_checker,"[170, 1039, 5]",False
+chk50,f_both3,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[97, 115, 8]",False
+chk50,f_both3,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[66, 227, 8]",,,False
+chk50,f_both3,PFcheap,frontEnd,3,two_of_two_high_sil,"[520, 141, 3]",mixed_sil_doer_checker,"[1039, 140, 5]",False
+chk50,f_both3,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 16, 8]",False
+chk50,f_both3,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 118, 8]",False
+chk50,f_both3,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 54, 8]",False
+chk50,f_both3,PFcheap,compJah,3,two_of_two_high_sil,"[520, 170, 3]",mixed_sil_doer_checker,"[1039, 170, 5]",False
+chk50,f_both3,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 97, 8]",False
+chk50,f_both3,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 66, 8]",,,False
+chk50,c_pat,PFmin,frontEnd,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,c_pat,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,c_pat,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,c_pat,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,c_pat,PFmin,compJah,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,c_pat,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,c_pat,PFmin,backEnd,2,low_sil_doer_checker,"[1, 2, 1.0, 1]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 8]",False
+chk50,c_pat,PFmax,frontEnd,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,c_pat,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,c_pat,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,c_pat,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,c_pat,PFmax,compJah,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,c_pat,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,c_pat,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",low_sil_doer_checker,"[-1, 1, 2, 1.0, 1]",False
+chk50,c_pat,PFlight,frontEnd,3,high_sil_isolated_checker,"[70, 520, 4]",mixed_sil_doer_checker,"[140, 1039, 5]",False
+chk50,c_pat,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[16, 115, 1]",False
+chk50,c_pat,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[118, 115, 1]",False
+chk50,c_pat,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[54, 115, 1]",False
+chk50,c_pat,PFlight,compJah,3,high_sil_isolated_checker,"[85, 520, 4]",two_of_two_high_sil,"[170, 520, 3]",False
+chk50,c_pat,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[97, 115, 1]",False
+chk50,c_pat,PFlight,backEnd,2,low_sil_doer_checker,"[66, 227, 1]",low_sil_diverse_doer_checker,"[66, 227, 8]",True
+chk50,c_pat,PFcheap,frontEnd,3,high_sil_isolated_checker,"[520, 70, 4]",two_of_two_high_sil,"[520, 141, 3]",False
+chk50,c_pat,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 16, 1]",False
+chk50,c_pat,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 118, 1]",False
+chk50,c_pat,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 54, 1]",False
+chk50,c_pat,PFcheap,compJah,3,high_sil_isolated_checker,"[520, 85, 4]",two_of_two_high_sil,"[520, 170, 3]",False
+chk50,c_pat,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 97, 1]",False
+chk50,c_pat,PFcheap,backEnd,2,low_sil_doer_checker,"[227, 66, 1]",low_sil_diverse_doer_checker,"[227, 66, 8]",True
+chk50,pc_sobel,PFmin,get_pixel,3,two_of_two_high_sil,"[1, 2, 1.0, 3]",high_sil_isolated_checker,"[1, 2, 1.0, 4]",True
+chk50,pc_sobel,PFmin,gx,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,pc_sobel,PFmin,gy,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,pc_sobel,PFmin,abs,1,none,"[0, 0, 0, 0]",low_sil_doer_checker,"[1, 2, 1.0, 1]",False
+chk50,pc_sobel,PFmax,get_pixel,3,two_of_two_high_sil,"[-2, 1, 2, 1.0, 3]",mixed_sil_doer_checker,"[-2, 2, 3, 2.0, 5]",False
+chk50,pc_sobel,PFmax,gx,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,pc_sobel,PFmax,gy,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,pc_sobel,PFmax,abs,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 8]",False
+chk50,pc_sobel,PFlight,get_pixel,3,high_sil_isolated_checker,"[128, 520, 4]",two_of_two_high_sil,"[256, 520, 3]",False
+chk50,pc_sobel,PFlight,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[30, 115, 1]",False
+chk50,pc_sobel,PFlight,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[30, 115, 1]",False
+chk50,pc_sobel,PFlight,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[50, 115, 1]",False
+chk50,pc_sobel,PFcheap,get_pixel,3,high_sil_isolated_checker,"[520, 128, 4]",two_of_two_high_sil,"[520, 256, 3]",False
+chk50,pc_sobel,PFcheap,gx,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 30, 1]",False
+chk50,pc_sobel,PFcheap,gy,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 30, 1]",False
+chk50,pc_sobel,PFcheap,abs,1,none,"[0, 0, 0]",low_sil_doer_checker,"[115, 50, 1]",False
+chk50,v_nvp,PFmin,frontEnd,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+chk50,v_nvp,PFmin,rasta,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmin,powspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmin,audspec,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmin,compJah,3,nvp_three_version,"[3, 4, 1.4, 2]",,,False
+chk50,v_nvp,PFmin,rastaFilter,1,none,"[0, 0, 0, 0]",low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmin,backEnd,2,low_sil_diverse_doer_checker,"[1, 2, 2.0, 1]",,,False
+chk50,v_nvp,PFmax,frontEnd,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+chk50,v_nvp,PFmax,rasta,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmax,powspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmax,audspec,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmax,compJah,3,nvp_three_version,"[-2, 3, 4, 1.4, 2]",,,False
+chk50,v_nvp,PFmax,rastaFilter,1,none,"[-2, 0, 0, 0, 0]",low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",False
+chk50,v_nvp,PFmax,backEnd,2,low_sil_diverse_doer_checker,"[-2, 1, 2, 2.0, 1]",,,False
+chk50,v_nvp,PFlight,frontEnd,3,nvp_three_version,"[324, 1558, 2]",,,False
+chk50,v_nvp,PFlight,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[16, 115, 1]",False
+chk50,v_nvp,PFlight,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[118, 115, 1]",False
+chk50,v_nvp,PFlight,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[54, 115, 1]",False
+chk50,v_nvp,PFlight,compJah,3,nvp_three_version,"[391, 1558, 2]",,,False
+chk50,v_nvp,PFlight,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[97, 115, 1]",False
+chk50,v_nvp,PFlight,backEnd,2,low_sil_diverse_doer_checker,"[66, 227, 1]",,,False
+chk50,v_nvp,PFcheap,frontEnd,3,nvp_three_version,"[1558, 324, 2]",,,False
+chk50,v_nvp,PFcheap,rasta,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 16, 1]",False
+chk50,v_nvp,PFcheap,powspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 118, 1]",False
+chk50,v_nvp,PFcheap,audspec,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 54, 1]",False
+chk50,v_nvp,PFcheap,compJah,3,nvp_three_version,"[1558, 391, 2]",,,False
+chk50,v_nvp,PFcheap,rastaFilter,1,none,"[0, 0, 0]",low_sil_diverse_doer_checker,"[115, 97, 1]",False
+chk50,v_nvp,PFcheap,backEnd,2,low_sil_diverse_doer_checker,"[227, 66, 1]",,,False

@@ -1,0 +1,41 @@
+instance,solver,status,seconds,total_cost,verify_ok,pin_ok,mu_solver,note
+p_rasta,gecode,UNKNOWN,301.358,,,,,eTime=299.223 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=11010 %%%mzn-stat: propagators=13322 %%%mzn-stat: propagations=2567366652 %%%mzn-stat: nodes=3526541 %%%mzn-stat: failures=1763250 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=85 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+p_rasta,chuffed,ERROR,1.182,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+p_rasta,highs,UNKNOWN,301.219,,,,," eliminatedLinearConstraints=1508 %%%mzn-stat: method=""minimize"" %%%mzn-stat: flatTime=5.98163 %%%mzn-stat-end =====UNKNOWN===== % time elapsed: 300.66 s %%%mzn-stat: objectiveBound=3302 %%%mzn-stat: nodes=1040 %%%mzn-stat: solveTime=293.8695 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end"
+p_rasta,cp-sat-1,OPTIMAL,7.737,3330,True,True,1012,
+f_random_hw,gecode,UNKNOWN,300.519,,,,,eTime=299.207 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=11003 %%%mzn-stat: propagators=13275 %%%mzn-stat: propagations=2611584300 %%%mzn-stat: nodes=3588386 %%%mzn-stat: failures=1794173 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=85 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+f_random_hw,chuffed,ERROR,1.113,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+f_random_hw,highs,UNKNOWN,301.223,,,,,"t: eliminatedLinearConstraints=1526 %%%mzn-stat: method=""minimize"" %%%mzn-stat: flatTime=5.9506 %%%mzn-stat-end =====UNKNOWN===== % time elapsed: 300.66 s %%%mzn-stat: objectiveBound=3333 %%%mzn-stat: nodes=444 %%%mzn-stat: solveTime=294.0202 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end"
+f_random_hw,cp-sat-1,OPTIMAL,38.689,3349,True,True,1079,
+d_random_hw,gecode,UNKNOWN,300.31,,,,,lveTime=299.475 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=6925 %%%mzn-stat: propagators=8140 %%%mzn-stat: propagations=2062452952 %%%mzn-stat: nodes=4892364 %%%mzn-stat: failures=2446168 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=58 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+d_random_hw,chuffed,ERROR,0.77,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+d_random_hw,highs,SAT,300.757,2585,True,True,3012,
+d_random_hw,cp-sat-1,OPTIMAL,6.796,1857,True,True,1620,
+d_systematic_sw,gecode,UNKNOWN,300.253,,,,,lveTime=299.594 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=5175 %%%mzn-stat: propagators=5894 %%%mzn-stat: propagations=1211535865 %%%mzn-stat: nodes=7316372 %%%mzn-stat: failures=3658174 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=54 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+d_systematic_sw,chuffed,ERROR,0.669,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+d_systematic_sw,highs,OPTIMAL,29.163,1846,True,True,2103,
+d_systematic_sw,cp-sat-1,OPTIMAL,4.442,1846,True,True,1833,
+f_sw3,gecode,UNKNOWN,300.318,,,,,lveTime=299.417 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=8254 %%%mzn-stat: propagators=9361 %%%mzn-stat: propagations=1177922280 %%%mzn-stat: nodes=5084578 %%%mzn-stat: failures=2542276 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=59 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+f_sw3,chuffed,ERROR,1.089,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+f_sw3,highs,SAT,300.769,5470,True,True,2750,
+f_sw3,cp-sat-1,OPTIMAL,165.119,3365,True,True,1079,
+f_both3,gecode,UNKNOWN,300.314,,,,,olveTime=299.39 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=8240 %%%mzn-stat: propagators=9350 %%%mzn-stat: propagations=2234105224 %%%mzn-stat: nodes=4056091 %%%mzn-stat: failures=2028032 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=57 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+f_both3,chuffed,ERROR,1.057,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+f_both3,highs,SAT,300.777,4349,True,True,2750,
+f_both3,cp-sat-1,OPTIMAL,11.84,3406,True,True,1079,
+c_pat,gecode,UNKNOWN,300.532,,,,,eTime=298.468 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=24762 %%%mzn-stat: propagators=19358 %%%mzn-stat: propagations=2630144964 %%%mzn-stat: nodes=2101367 %%%mzn-stat: failures=1050664 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=85 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+c_pat,chuffed,ERROR,2.004,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+c_pat,highs,UNKNOWN,301.987,,,,,": eliminatedLinearConstraints=3494 %%%mzn-stat: method=""minimize"" %%%mzn-stat: flatTime=10.5457 %%%mzn-stat-end =====UNKNOWN===== % time elapsed: 300.98 s %%%mzn-stat: objectiveBound=3333 %%%mzn-stat: nodes=414 %%%mzn-stat: solveTime=289.3884 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end"
+c_pat,cp-sat-1,UNKNOWN,300.478,,,,,"3 %%%mzn-stat: evaluatedReifiedConstraints=3852 %%%mzn-stat: evaluatedHalfReifiedConstraints=5694 %%%mzn-stat: eliminatedImplications=2779 %%%mzn-stat: method=""minimize"" %%%mzn-stat: flatTime=1.48654 %%%mzn-stat-end =====UNKNOWN===== % time elapsed: 300.26 s %%%mzn-stat: nSolutions=0 %%%mzn-stat-end"
+pc_sobel,gecode,UNKNOWN,300.368,,,,,lveTime=299.137 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=11486 %%%mzn-stat: propagators=6277 %%%mzn-stat: propagations=7550258053 %%%mzn-stat: nodes=1923719 %%%mzn-stat: failures=961849 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=40 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+pc_sobel,chuffed,ERROR,1.371,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+pc_sobel,highs,OPTIMAL,255.604,1401,True,True,768,
+pc_sobel,cp-sat-1,OPTIMAL,3.534,1401,True,True,499,
+v_nvp,gecode,OPTIMAL,54.095,5680,True,True,1180,
+v_nvp,chuffed,ERROR,1.023,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+v_nvp,highs,SAT,300.859,6330,True,True,3099,
+v_nvp,cp-sat-1,OPTIMAL,7.56,5680,True,True,1180,
+m_3app,gecode,UNKNOWN,300.701,,,,,veTime=298.048 %%%mzn-stat: solutions=0 %%%mzn-stat: variables=22793 %%%mzn-stat: propagators=29574 %%%mzn-stat: propagations=8772634543 %%%mzn-stat: nodes=309459 %%%mzn-stat: failures=154701 %%%mzn-stat: restarts=0 %%%mzn-stat: peakDepth=150 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end
+m_3app,chuffed,ERROR,2.631,,,,,arithmetic.cpp:668: Cannot handle non-sign-fixed vars
+m_3app,highs,UNKNOWN,302.623,,,,,"at: eliminatedLinearConstraints=4045 %%%mzn-stat: method=""minimize"" %%%mzn-stat: flatTime=15.2051 %%%mzn-stat-end =====UNKNOWN===== % time elapsed: 301.46 s %%%mzn-stat: objectiveBound=4416 %%%mzn-stat: nodes=0 %%%mzn-stat: solveTime=284.8041 %%%mzn-stat-end %%%mzn-stat: nSolutions=0 %%%mzn-stat-end"
+m_3app,cp-sat-1,UNKNOWN,300.555,,,,,"92 %%%mzn-stat: evaluatedReifiedConstraints=6228 %%%mzn-stat: evaluatedHalfReifiedConstraints=9392 %%%mzn-stat: eliminatedImplications=4017 %%%mzn-stat: method=""minimize"" %%%mzn-stat: flatTime=1.9043 %%%mzn-stat-end =====UNKNOWN===== % time elapsed: 300.32 s %%%mzn-stat: nSolutions=0 %%%mzn-stat-end"

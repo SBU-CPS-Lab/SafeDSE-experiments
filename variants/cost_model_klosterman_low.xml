@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Per-SIL software development cost multipliers (docs/design.md#cost-profiles).
+
+     Source: Myklebust, Stalhane, Haugset, "Development Cost SIL2 to SIL3",
+     ISSC 2015. The paper is a survey, and its central finding is that the
+     spread is enormous: reported SIL2 to SIL3 increases run from 0% to over
+     500%. Encoding one table would be false precision, so three profiles are
+     provided and the profile is treated as an EXPERIMENTAL VARIABLE. The
+     question to ask is not "which multiplier is right" but "does the optimal
+     architecture change when the profile changes". If the same mapping wins
+     under all three the result is robust; if it flips, that flip is a finding.
+
+     Values are x100 so the model stays integral.
+
+     HONESTY NOTES
+       * SIL0 and SIL4 are EXTRAPOLATED. The paper covers SIL1-SIL3 only.
+       * klosterman and myklebust2015 disagree by a factor of 3.0 at SIL3.
+         That is a fact about the state of the literature, not a defect in
+         either profile.
+       * These are SOFTWARE development costs. The paper also notes that SIL3
+         can be reached without changing the development process by raising
+         hardware fault tolerance from 0 to 1, at roughly double the hardware
+         cost, which is precisely the other arm of the trade-off this DSE
+         explores. -->
+<cost_model>
+
+  <!-- The paper's own recommendation: +100% SIL1 to SIL2 (CompSoft survey midpoint),
+       +130% SIL2 to SIL3 (from the R/HR analysis: 170%, 100%, 50-200%). -->
+  <profile name="myklebust2015" default="true">
+    <sil level="0" multiplier="100"/>
+    <sil level="1" multiplier="113"/>
+    <sil level="2" multiplier="225"/>
+    <sil level="3" multiplier="518"/>
+    <sil level="4" multiplier="906"/>
+  </profile>
+
+  <!-- Table 1 (Klosterman): effort increase over a non-safety baseline of
+       5-20% (SIL1/ASIL A), 10-36% (SIL2/ASIL B), 20-60% (SIL3/ASIL C) and
+       40-100% (SIL3/ASIL D), midpoints taken. The table maps BOTH of its
+       upper rows to SIL3; SIL3 takes the ASIL D row, the highest integrity
+       level it is equated with. (An earlier version gave SIL3 the ASIL C row
+       and SIL4 the ASIL D row, which the table does not say.) SIL4 is
+       extrapolated by repeating the SIL2->SIL3 ratio: 170 * 170/123 = 235.
+       Much flatter than the other two profiles. -->
+  <profile name="klosterman">
+    <sil level="0" multiplier="100"/>
+    <sil level="1" multiplier="113"/>
+    <sil level="2" multiplier="123"/>
+    <sil level="3" multiplier="170"/>
+    <sil level="4" multiplier="235"/>
+  </profile>
+
+  <!-- Allen / Jaguar Land Rover DO-178B effort ratios E=1, D=3, C=5, B=9,
+       with the paper's DAL D ~ SIL2, DAL C ~ SIL3 mapping. -->
+  <profile name="do178b">
+    <sil level="0" multiplier="100"/>
+    <sil level="1" multiplier="200"/>
+    <sil level="2" multiplier="300"/>
+    <sil level="3" multiplier="500"/>
+    <sil level="4" multiplier="900"/>
+  </profile>
+
+  <!-- variant (breadth.py): Klosterman's table with the
+       ASIL C row (20-60 %, midpoint 140) for SIL 3; SIL 4 extrapolated by
+       the same ratio, 140 * 140/123 = 159. -->
+  <profile name="klosterman_low">
+    <sil level="0" multiplier="100"/>
+    <sil level="1" multiplier="113"/>
+    <sil level="2" multiplier="123"/>
+    <sil level="3" multiplier="140"/>
+    <sil level="4" multiplier="159"/>
+  </profile>
+
+  <!-- Baseline development cost per actor, before the SIL multiplier. Defaults
+       to `default` for any task type not listed. Real numbers would come from
+       function-point or SLOC estimates. -->
+  <baseline default="100"/>
+
+</cost_model>

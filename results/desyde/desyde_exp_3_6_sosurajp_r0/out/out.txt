@@ -1,0 +1,6 @@
+
+ 
+*** 
+===== search ended after: 2831 s (2831216 ms) (with 0 incremental timer reset(s).) =====
+0 solutions found
+search nodes: 8608, fail: 4301, propagate: 859905470, depth: 29, nogoods: 0, restarts: 0 ***

@@ -1,0 +1,11 @@
+instance,build_s,status,solve_s,pin_s,verify_s,verify_ok,gsn_s,gsn_rc,gsn_elements
+p_rasta,0.137,OPTIMAL,6.223,0.534,0.093,True,0.168,0,
+f_random_hw,0.143,OPTIMAL,9.453,0.554,0.087,True,0.166,0,
+d_random_hw,0.157,OPTIMAL,7.107,0.559,0.095,True,0.168,0,
+d_systematic_sw,0.152,OPTIMAL,3.52,0.5,0.098,True,0.165,0,
+f_sw3,0.138,OPTIMAL,5.732,0.462,0.081,True,0.153,0,
+f_both3,0.135,OPTIMAL,3.378,0.478,0.096,True,0.162,0,
+c_pat,0.152,OPTIMAL,15.061,1.173,0.189,True,0.177,0,
+pc_sobel,0.148,OPTIMAL,3.211,0.918,0.099,True,0.165,0,
+v_nvp,0.119,OPTIMAL,5.573,0.517,0.101,True,0.14,0,
+m_3app,0.149,OPTIMAL,80.665,0.79,0.116,True,0.184,0,

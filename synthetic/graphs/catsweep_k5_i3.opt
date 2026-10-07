@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf3 type="sdf" version="1.0">
+  <settings type="generate">
+    <graph>
+      <actors nr="24"/>
+      <degree avg="2" var="1" min="1" max="4"/>
+      <rate avg="1" var="1" min="1" max="1" repetitionVectorSum="24"/>
+      <initialTokens prop="0.3"/>
+      <structure stronglyConnected="true" acyclic="false"/>
+    </graph>
+    <graphProperties>
+      <procs nrTypes="3" mapChance="0.3"/>
+      <execTime avg="10" var="5" min="1" max="30"/>
+      <stateSize avg="1" var="1" min="1" max="1"/>
+      <tokenSize avg="1" var="1" min="1" max="1"/>
+      <bufferSize/>
+      <bandwidthRequirement avg="2" var="0" min="1" max="4"/>
+      <latencyRequirement avg="2" var="0" min="1" max="4"/>
+      <throughputConstraint autoConcurrencyDegree="1" scaleFactor="0.1"/>
+    </graphProperties>
+  </settings>
+</sdf3>

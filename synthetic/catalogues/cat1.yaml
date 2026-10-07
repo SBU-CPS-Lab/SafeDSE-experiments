@@ -1,0 +1,28 @@
+patterns:
+- id: none
+  source:
+  - baseline
+  description: 'No structural pattern.  The required integrity is met by development
+    process alone.  IEC 61508 treats this as adequate at the lower integrity levels
+    only.  The ceiling is SIL 1, per IEC 61508: from SIL 2 upward the standard expects
+    diagnostic coverage, so a SIL-2 actor must take at least a checker pattern and
+    cannot be discharged by process alone. This ceiling is the single most consequential
+    number in the library -- move it and the whole design space moves with it -- which
+    is exactly why it lives in the data where it can be argued with, not in the solver.
+
+    '
+  components: []
+  edges: []
+  placement: []
+  achieves_sil:
+  - 0
+  - 1
+  covers_faults:
+  - random_hw
+  - systematic_sw
+  failure_mode: none
+  voter: folded
+  recurring_cost_units: 0
+  scenarios: []
+  tactics: []
+  sdf_compatible: true

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<safety fault_model="random_hw" cost_profile="myklebust2015" allow_promotion="true">
+  <actor name="a0" sil="3"/>
+  <actor name="a1" sil="3"/>
+  <actor name="a2" sil="2"/>
+  <actor name="a3" sil="2"/>
+  <actor name="a4" sil="1"/>
+  <actor name="a5" sil="0"/>
+  <actor name="a6" sil="1"/>
+</safety>

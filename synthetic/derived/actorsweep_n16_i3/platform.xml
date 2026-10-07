@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platform name="synthetic_3type">
+  <fcr_template name="T0a" max_instances="3" monetary="10">
+    <processor model="proc_0" count="1" max_sil="4" mem="64000" partitionable="false" partition_cost="0">
+      <mode name="standard" cycle="1.0" dynPower="50" area="10" monetary="10"/>
+    </processor>
+  </fcr_template>
+  <fcr_template name="T1a" max_instances="3" monetary="20">
+    <processor model="proc_1" count="1" max_sil="4" mem="64000" partitionable="false" partition_cost="0">
+      <mode name="standard" cycle="1.0" dynPower="60" area="10" monetary="20"/>
+    </processor>
+  </fcr_template>
+  <fcr_template name="T2a" max_instances="2" monetary="30">
+    <processor model="proc_2" count="1" max_sil="4" mem="64000" partitionable="false" partition_cost="0">
+      <mode name="standard" cycle="1.0" dynPower="70" area="10" monetary="30"/>
+    </processor>
+  </fcr_template>
+</platform>

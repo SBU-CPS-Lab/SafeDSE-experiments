@@ -1,0 +1,12 @@
+scenario,rep,target,threads,exit,wall_seconds,step1_seconds,step1_timeout,step1_solutions,step1_periods,step2_seconds,step2_timeout,step2_solutions,step2_periods,target_period,proven,published_period,published_proven,cap_seconds,capped
+exp_3_1_rajp,0,d_jpegEnc1,4,0,3.892,3.42,False,21,"[515, 2524]",0.004,False,0,null,2524,True,2524,True,3600,False
+exp_3_3_sosujp,0,d_jpegEnc1,4,killed,3600.2,1871.587,True,21,"[397, 2025, 2544]",,,,null,2544,False,2544,True,3600,True
+exp_3_4_sorajp,0,d_jpegEnc1,4,killed,3600.265,2058.263,True,19,"[397, 515, 2544]",,,,null,2544,False,2544,True,3600,True
+exp_3_5_surajp,0,d_jpegEnc1,4,killed,3600.256,2091.516,True,18,"[2025, 515, 2544]",,,,null,2544,False,2544,True,3600,True
+exp_3_6_sosurajp,0,d_jpegEnc1,4,0,2885.498,52.972,False,10,"[397, 2025, 515, 3882]",2831.216,False,0,null,3882,True,3882,True,3600,False
+exp_4_1_rajp,0,d_jpegEnc1,4,killed,3600.219,1805.797,True,31,"[515, 1514]",,,,null,1514,False,1388,True,3600,True
+exp_4_3_sorajp,0,d_jpegEnc1,4,killed,3600.27,1808.881,True,32,"[397, 515, 1766]",,,,null,1766,False,1766,False,3600,True
+exp_3_1_rajp,1,d_jpegEnc1,4,0,4.173,3.759,False,20,"[515, 2524]",0.004,False,0,null,2524,True,2524,True,3600,False
+exp_3_1_rajp,2,d_jpegEnc1,4,0,3.67,3.268,False,19,"[515, 2524]",0.004,False,0,null,2524,True,2524,True,3600,False
+exp_3_1_rajp,3,d_jpegEnc1,4,0,4.695,4.263,False,19,"[515, 2524]",0.004,False,0,null,2524,True,2524,True,3600,False
+exp_3_1_rajp,4,d_jpegEnc1,4,0,2.714,2.282,False,19,"[515, 2524]",0.004,False,0,null,2524,True,2524,True,3600,False

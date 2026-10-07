@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- m_3app (breadth.py multi): illustrative mixed-SIL assignment for
+     three of Rosvall's applications on one platform. RASTA as in
+     safedse/data/safety_rasta.xml (SIL 3/3/2, other actors SIL 1), Sobel at
+     SIL 2, SUSAN without a safety requirement (SIL 0, the default). -->
+<safety fault_model="random_hw" cost_profile="myklebust2015" allow_promotion="true">
+  <default sil="0"/>
+  <actor name="frontEnd"    sil="3"/>
+  <actor name="compJah"     sil="3"/>
+  <actor name="backEnd"     sil="2"/>
+  <actor name="rasta"       sil="1"/>
+  <actor name="powspec"     sil="1"/>
+  <actor name="audspec"     sil="1"/>
+  <actor name="rastaFilter" sil="1"/>
+  <actor name="get_pixel"   sil="2"/>
+  <actor name="gx"          sil="2"/>
+  <actor name="gy"          sil="2"/>
+  <actor name="abs"         sil="2"/>
+</safety>

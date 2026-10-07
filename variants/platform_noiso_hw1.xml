@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SafeDSE platform catalogue (docs/inputs.md#platform-catalogue).
+     An FCR template is something you physically buy: its cores share power,
+     clock and substrate, so they fail together.  The DSE decides how many of
+     each to instantiate. -->
+<!-- variant of data/platform/mixed_noiso.xml: every monetary value x 1 (breadth.py) -->
+<platform name="mixed_no_isolation">
+
+  <!-- expensive, certifiable up to SIL 4, supports partitioning -->
+  <fcr_template name="R-card" max_instances="3" monetary="120">
+    <processor model="cortexR" count="2" max_sil="4" mem="64000"
+               partitionable="false" partition_cost="0">
+      <mode name="standard"    cycle="1"   dynPower="180" area="14" monetary="40"/>
+      <mode name="eco"         cycle="1.3" dynPower="95"  area="14" monetary="40"/>
+    </processor>
+  </fcr_template>
+
+  <!-- cheap, capped at SIL 2, no certified isolation available -->
+  <fcr_template name="M-card" max_instances="4" monetary="25">
+    <processor model="cortexM" count="4" max_sil="2" mem="16000"
+               partitionable="false" partition_cost="0">
+      <mode name="standard"    cycle="1.6" dynPower="40"  area="4" monetary="8"/>
+      <mode name="performance" cycle="1.2" dynPower="72"  area="5" monetary="11"/>
+    </processor>
+  </fcr_template>
+
+  <interconnect>
+    <TDMA_bus name="TDMA-bus" x-dimension="8" flitSize="32" tdma_slots="16"
+              maxSlotsPerProc="8">
+      <mode name="default" cycleLength="1"/>
+    </TDMA_bus>
+  </interconnect>
+</platform>

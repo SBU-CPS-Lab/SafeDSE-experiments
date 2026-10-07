@@ -1,0 +1,176 @@
+patterns:
+- id: none
+  source:
+  - baseline
+  description: 'No structural pattern.  The required integrity is met by development
+    process alone.  IEC 61508 treats this as adequate at the lower integrity levels
+    only.  The ceiling is SIL 1, per IEC 61508: from SIL 2 upward the standard expects
+    diagnostic coverage, so a SIL-2 actor must take at least a checker pattern and
+    cannot be discharged by process alone. This ceiling is the single most consequential
+    number in the library -- move it and the whole design space moves with it -- which
+    is exactly why it lives in the data where it can be argued with, not in the solver.
+
+    '
+  components: []
+  edges: []
+  placement: []
+  achieves_sil:
+  - 0
+  - 1
+  covers_faults:
+  - random_hw
+  - systematic_sw
+  failure_mode: none
+  voter: folded
+  recurring_cost_units: 0
+  scenarios: []
+  tactics: []
+  sdf_compatible: true
+- id: low_sil_doer_checker
+  source:
+  - koopman
+  - Low SIL Doer/Checker Pair (E-quizzer)
+  description: 'A low-SIL doer on one CPU, checked by a higher-SIL checker on a SEPARATE
+    CPU.  The checker quizzes the doer and can shut the channel down, so the pair
+    fails active at SIL 1-2.  Separation is what makes it tolerate a random hardware
+    fault in the doer''s processor.
+
+    '
+  components:
+  - role: checker
+    sil_offset: 1
+    wcet_type: checker_<owner>
+  edges:
+  - from: owner
+    to: checker
+    tokens: 0
+  - from: checker
+    to: owner
+    tokens: 1
+  input_fanout:
+  - checker
+  output_from: owner
+  placement:
+  - relation: DIFFERENT
+    members:
+    - owner
+    - checker
+    for: random_hw
+  achieves_sil:
+  - 1
+  - 2
+  covers_faults:
+  - random_hw
+  failure_mode: active
+  voter: folded
+  dev_cost_multiplier:
+    checker: 1.0
+  recurring_cost_units: 2
+  scenarios:
+  - id: SC1
+    text: 'An implausible output of the doer is detected by the checker.
+
+      '
+    tactics:
+    - Sanity Check
+  - id: SC2
+    text: 'A random hardware fault in the doer''s processor does not prevent detection,
+      because the checker runs on another processor.
+
+      '
+    covers: random_hw
+    tactics:
+    - Replication Redundancy
+  tactics:
+  - Sanity Check
+  - Replication Redundancy
+  sdf_compatible: true
+- id: two_of_two_high_sil
+  source:
+  - koopman
+  - Two Channel (2-of-2)
+  description: 'Two channels, both at high SIL, compute the same function and must
+    agree. Channel b receives the owner''s result, compares it with its own, and returns
+    the verdict to the owner over an edge with one initial token; on a disagreement
+    the owner marks its output invalid and the pair goes to its safe state (fails
+    silent), so the fault reaction starts within one iteration.  No explicit voter:
+    2-of-2 requires agreement rather than a majority, so the comparison folds into
+    channel b and the owner, and no explicit voter is needed.  The name is Koopman''s;
+    it is not IEC 61508 MooN notation. Both channels always fire and always produce,
+    per the token-preservation obligation.  A detected disagreement marks the token
+    invalid; it never withholds it.  So the timing guarantee holds in the degraded
+    mode too, at the price of being conservative in the fault-free case.
+
+    '
+  components:
+  - role: channel_b
+    sil_offset: 0
+    wcet_type: <owner>
+  edges:
+  - from: owner
+    to: channel_b
+    tokens: 0
+  - from: channel_b
+    to: owner
+    tokens: 1
+  input_fanout:
+  - channel_b
+  output_from: owner
+  placement:
+  - relation: DIFFERENT_FCR
+    members:
+    - owner
+    - channel_b
+    for: random_hw
+  - relation: DIVERSE
+    members:
+    - owner
+    - channel_b
+    for: systematic_sw
+  achieves_sil:
+  - 3
+  - 4
+  covers_faults:
+  - random_hw
+  - systematic_sw
+  failure_mode: silent
+  voter: folded
+  dev_cost_multiplier:
+    channel_b: 1.0
+  dev_cost_multiplier_diverse:
+    channel_b: 2.0
+  recurring_cost_units: 2
+  scenarios:
+  - id: SC1
+    text: 'A fault in either channel is detected as a disagreement between the two
+      channels.
+
+      '
+    tactics:
+    - Comparison
+  - id: SC2
+    text: 'A random hardware fault in one channel does not affect the other channel.
+
+      '
+    covers: random_hw
+    tactics:
+    - Replication Redundancy
+  - id: SC3
+    text: 'A systematic fault is not common to both channels.
+
+      '
+    covers: systematic_sw
+    tactics:
+    - Diverse Redundancy
+  - id: SC4
+    text: 'A detected disagreement does not propagate an incorrect result to the consumer.
+
+      '
+    tactics:
+    - Voting
+  tactics:
+  - Replication Redundancy
+  - Comparison
+  - Voting
+  - Diverse Redundancy
+  sdf_compatible: true

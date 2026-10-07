@@ -1,0 +1,81 @@
+diff -ruN a/lib/activation.mzn b/lib/activation.mzn
+--- a/lib/activation.mzn
++++ b/lib/activation.mzn
+@@ -98,25 +98,14 @@
+     array[int] of var int: pot,
+     array[int] of var int: mu_of
+ ) =
+-    % MEASURED REDUNDANT. The front-end writes pattern channels into
+-    % the `tok` matrix as well as into pe_*, and lib/mcm.mzn posts every
+-    % tok[i,j] >= 0 pair UNCONDITIONALLY. So each constraint below is a weaker,
+-    % guarded restatement of one already posted outright, and contributes
+-    % nothing: setting nPE = 0 on out/v_nvp.dzn returns the identical optimum
+-    % (mu=1180, nprocs=6, hw_cost=624, dev_cost=5046) in the same 5.6 s.
+-    %
+-    % What actually neutralises an unselected pattern's edges is not this
+-    % predicate but T[i] = 0 on inactive nodes: the edge stays in the graph and
+-    % contributes zero delay. That is the documented design ("inactive nodes are
+-    % neutralised, not deleted"), and it is also what tools/verify.py
+-    % reconstructs, which is why the two agree.
+-    %
+-    % Kept rather than deleted because the redundancy is a property of how
+-    % build_dzn currently fills `tok`, not of the model: excluding guarded
+-    % channels from `tok` -- so that a pattern edge is posted only when its
+-    % pattern is selected -- would make this predicate the only thing posting
+-    % them, and would need the verifier changed in step. Do not assume deleting
+-    % it is free, and do not assume it is doing work.
++    % The only place pattern channels enter the potentials: model/dse.mzn
++    % removes them from the unconditional `tok` edges. Before that, this
++    % predicate was measured redundant (every pattern channel was also posted
++    % outright, and only T[i] = 0 on inactive nodes neutralised the unselected
++    % ones), which made the least period of a design pessimistic whenever an
++    % unselected channel met an inactive slot's static-order edges.
++    % tools/verify.py builds its MSAG the same way: a pattern channel is an
++    % edge only when its guard holds.
+     forall(e in PE)(
+         pe_on[e] -> pot[pe_dst[e]] >= pot[pe_src[e]] + T[pe_src[e]]
+                                     - pe_tok[e] * mu_of[pe_src[e]]
+diff -ruN a/model/dse.mzn b/model/dse.mzn
+--- a/model/dse.mzn
++++ b/model/dse.mzn
+@@ -107,9 +107,37 @@
+ array[A] of var 1..maxmu: mu_of;
+ constraint forall(i in A)( mu_of[i] = mu[app[i]] );
+ 
+-constraint mcm_fixed_edges(tok, T, pot, mu_of);
+-constraint mcm_schedule_edges(sedge, T, pot);
+-constraint mcm_wrap_edges(wrap, T, pot, mu_of);
++% Two potentials per node. An inactive slot has
++% T = 0 but keeps its place in its core's static order; if channel edges and
++% order edges met at its potential, a channel into the slot followed by an
++% order edge out of it would be a path that the deployed design does not have,
++% and the least period of a fixed design could exceed its real MCR (146 vs
++% 139). So channels use `pot` and the static order and wrap edges use `qpot`,
++% and the two coincide on every active node: an inactive node passes the order
++% on (T = 0, which splices the order around it) without joining its channels
++% to it. Channel edges stay unconditional linear inequalities.
++array[A] of var -maxmu..maxmu: qpot;
++constraint forall(i in A where forall(p in PAT)(node_guard[i, p]))(
++    qpot[i] = pot[i] );
++constraint forall(i in A where not forall(p in PAT)(node_guard[i, p]))(
++    active[i] -> qpot[i] = pot[i] );
++% A pattern channel whose endpoints can both be active under a pattern that
++% does not select it (a slot shared between patterns, or a second guard) is
++% posted only under its own guard, pe_on (mcm_pattern_edges); every other
++% channel is posted from `tok`. Self-loops of slots stay in `tok`.
++array[int] of bool: pe_needs_guard = [
++    exists(p in PAT)( not pe_guard2[e, p] ) \/
++    exists(p in PAT)( node_guard[pe_src[e], p] /\ node_guard[pe_dst[e], p]
++                      /\ not pe_guard[e, p] )
++    | e in PE ];
++set of int: pe_pairs = { (pe_src[e] - 1) * card(A) + pe_dst[e]
++                       | e in PE where pe_needs_guard[e] };
++array[A, A] of int: tok_fixed = array2d(A, A,
++    [ if i != j /\ (i - 1) * card(A) + j in pe_pairs then -1 else tok[i, j] endif
++    | i, j in A ]);
++constraint mcm_fixed_edges(tok_fixed, T, pot, mu_of);
++constraint mcm_schedule_edges(sedge, T, qpot);
++constraint mcm_wrap_edges(wrap, T, qpot, mu_of);
+ constraint mcm_pattern_edges(T, pot, mu_of);
+ constraint comm_msag_edges(T, pot, mu_of);
+ constraint mcm_anchor(pot);
