@@ -12,6 +12,8 @@ touches generated/paper/. No number is typed by hand. A cell is either
   * input data read from the safedse data files (catalog, tactic table, cost
     profiles, platforms), which are inputs, not measurements.
 
+Fixed column widths fit the report's single-column page (6.5 in text width).
+
     python3 make_report.py
 """
 from __future__ import annotations
@@ -125,10 +127,10 @@ def tab_catalog_full() -> None:
     body = [
         r"\setlength{\tabcolsep}{3pt}",
         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l"
+        r" >{\raggedright\arraybackslash}p{1.0in}"
         r" >{\raggedright\arraybackslash}p{1.15in}"
-        r" >{\raggedright\arraybackslash}p{1.3in}"
-        r" >{\raggedright\arraybackslash}p{0.85in} l c c"
-        r" >{\raggedright\arraybackslash}p{1.1in}@{}}",
+        r" >{\raggedright\arraybackslash}p{0.75in} l c c"
+        r" >{\raggedright\arraybackslash}p{0.95in}@{}}",
         r"\toprule",
         r"Pattern & Components (WCET, $\Delta$SIL) & Edges (tokens) & "
         r"Inputs to / output from & Failure & Rec. & Mult. & Tactics \\",
@@ -184,7 +186,7 @@ def tab_scenarios() -> None:
     body = [
         r"\setlength{\tabcolsep}{3pt}",
         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l c l"
-        r" >{\raggedright\arraybackslash}p{4.05in}@{}}",
+        r" >{\raggedright\arraybackslash}p{3.45in}@{}}",
         r"\toprule",
         r"Pattern & Scen. & Covers & Tactics & General scenario (catalog text) \\",
         r"\midrule",
@@ -220,8 +222,8 @@ def tab_tactics() -> None:
     body = [
         r"\setlength{\tabcolsep}{3pt}",
         r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l l"
-        r" >{\raggedright\arraybackslash}p{2.1in} l"
-        r" >{\raggedright\arraybackslash}p{1.5in}@{}}",
+        r" >{\raggedright\arraybackslash}p{1.75in} l"
+        r" >{\raggedright\arraybackslash}p{1.2in}@{}}",
         r"\toprule",
         r"Tactic & Category & IEC 61508-7 methods & Relations & "
         r"Patterns using it \\",
@@ -530,7 +532,7 @@ def tab_pfchoice() -> None:
     rules = ["PFmin", "PFmax", "PFlight", "PFcheap"]
     body = [r"\setlength{\tabcolsep}{3pt}",
             r"\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}c l " +
-            r">{\raggedright\arraybackslash}p{1.45in} " * 4 + r"@{}}",
+            r">{\raggedright\arraybackslash}p{1.4in} " * 4 + r"@{}}",
             r"\toprule",
             r"SIL & FM & " + " & ".join(FLOW_TEX[r] for r in rules) + r" \\",
             r"\midrule"]
